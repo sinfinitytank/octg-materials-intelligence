@@ -60,7 +60,7 @@ export default function Dashboard() {
     <>
       <PageTitle
         eyebrow="WORKSPACE / OVERVIEW"
-        title="OCTG material selection"
+        title="Materials intelligence"
         description="A traceable workflow from well conditions to candidate review."
         actions={
           <button className="button secondary" onClick={() => navigate('/database')}>
