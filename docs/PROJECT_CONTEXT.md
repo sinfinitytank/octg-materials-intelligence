@@ -8,6 +8,8 @@ Repository: https://github.com/sinfinitytank/octg-materials-intelligence
 
 Application: https://sinfinitytank.github.io/octg-materials-intelligence/
 
+Status: Version 1.0 is published and verified. Local and Ubuntu CI checks passed 10 Python regressions, 122 unit/integration tests and 26 production-browser workflows. All 26 browser workflows also passed against the actual hosted site; both hosted datasets matched the validated release bytes. Evidence and verification boundaries are recorded in `VALIDATION.md`.
+
 ## Stack and boundaries
 
 React 18, strict TypeScript, Vite 7, Tailwind CSS 4, TanStack Table 8, Recharts 3, Zod 3 and Lucide. Vitest 5, React Testing Library and Playwright test source, domain and production-browser behavior. Node.js 24 is used in CI; the ingestion pipeline needs only Python's standard library. No backend/authentication/paid service is required. Hash navigation supports refreshes under a repository URL base.

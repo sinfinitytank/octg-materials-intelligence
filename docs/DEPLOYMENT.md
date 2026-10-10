@@ -32,6 +32,14 @@ The workflow uses GitHub's [custom Pages workflow guidance](https://docs.github.
 
 After deployment, verify the live URL, the JSON data URL and at least one refreshed hash route on desktop and mobile. A green build alone is not proof that the published site works.
 
+To run the full browser suite against a published site:
+
+```sh
+PLAYWRIGHT_BASE_URL=https://sinfinitytank.github.io/octg-materials-intelligence/ npm run test:e2e -- --timeout=60000
+```
+
+This skips the local preview server and exercises the actual hosted application. Use the exact destination URL for a different repository or host.
+
 ## If publishing from a new authenticated checkout
 
 ```sh

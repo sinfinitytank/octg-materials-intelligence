@@ -18,7 +18,18 @@ The browser suite runs 13 workflows on desktop Chromium and emulated mobile Chro
 
 Local release results: **450 records validated, 10 Python regressions passed, 122 Vitest/React integration tests passed, 26 Playwright workflows passed, and strict TypeScript/production build passed**. `npm audit` reports zero known dependency vulnerabilities in the locked dependency snapshot. No test is disabled to permit release.
 
-Published-site confirmation is pending the first gated deployment. This document will be updated with the actual workflow and live-browser results after publication.
+## Published-site verification
+
+The [gated GitHub Actions run](https://github.com/sinfinitytank/octg-materials-intelligence/actions/runs/38029129096) completed successfully for application commit `049850f24080a0fecab2c86923fb124c4676f8e1`. Its Ubuntu runner independently passed source validation, all 10 Python regressions, all 122 Vitest/integration tests, the production build and all 26 browser workflows before deployment.
+
+The actual [GitHub Pages website](https://sinfinitytank.github.io/octg-materials-intelligence/) was then tested on 10 October 2026:
+
+- **26 of 26 live desktop/mobile browser workflows passed**, including all eight refreshed routes, interactive controls, downloads, local storage and error recovery. No browser page errors or viewport-wide horizontal overflow were found by the route checks.
+- Both hosted JSON endpoints returned HTTP 200 and were byte-identical to the validated release files. The live material dataset contains all 450 records and data version `2026-10-10.1`.
+- Live `materials.json` SHA-256: `781690688b350706c446b7dbcf3895b7f9a4e7cde8dd5b414e414030f77891ff`.
+- Live `reference-data.json` SHA-256: `2e34c4a1c027aa2ffc4ec7e80b12101dce48e519f93f3443a389d8922d7b8526`.
+
+The live check used `PLAYWRIGHT_BASE_URL=https://sinfinitytank.github.io/octg-materials-intelligence/ npm run test:e2e -- --timeout=60000`. The larger per-test timeout accommodates network access; the complete live suite finished in 12 seconds. Subsequent documentation-only commits do not alter the tested application or datasets.
 
 ## Visual evidence
 

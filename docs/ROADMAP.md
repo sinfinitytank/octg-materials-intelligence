@@ -9,10 +9,12 @@
 - CSV/JSON exports and print-friendly engineering summaries.
 - Source-data corruption tests, engineering tests, React integration and production-browser workflows.
 - CI and GitHub Pages workflow configuration.
+- Public repository publication and successful gated GitHub Pages deployment.
+- Local/CI release checks and all 26 browser workflows against the actual published site; hosted data byte fidelity verified.
 
 ## In Progress
 
-- Final production-browser verification and live release verification (see `VALIDATION.md` for final release state).
+- No open Version 1.0 release blockers. Subsequent feature work will be recorded here when started.
 
 ## Planned
 
