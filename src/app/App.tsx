@@ -170,7 +170,6 @@ function Shell() {
             <strong>Engineering workspace</strong>
             <small>LOCAL • V1.0</small>
           </span>
-          <ChevronRight size={14} />
         </div>
         <div className="nav-heading">WORKSPACE</div>
         <nav>
@@ -209,7 +208,7 @@ function Shell() {
         <div className="sidebar-bottom">
           <div className="sidebar-assurance">
             <ShieldCheck size={20} />
-            <strong>Evidence before decisions.</strong>
+            <strong>Engineering basis</strong>
             <p>
               Preliminary screening supports engineering judgment. Qualification requires verified
               evidence.
@@ -250,7 +249,7 @@ function Shell() {
           <div className="topbar-right">
             <span className="library-status">
               <span className="live-dot" />
-              Source library connected
+              Local source library
             </span>
             <span className="topbar-divider" />
             <button

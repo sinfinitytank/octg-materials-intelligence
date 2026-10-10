@@ -1,3 +1,4 @@
+import WellSchematic from '../components/WellSchematic';
 import {
   ArrowRight,
   ArrowUpRight,
@@ -61,7 +62,7 @@ export default function Dashboard() {
       <PageTitle
         eyebrow="WORKSPACE / OVERVIEW"
         title="Materials intelligence"
-        description="A clearer view of your OCTG materials, evidence, and engineering decisions."
+        description="OCTG grade library, well design basis, and preliminary material screening."
         actions={
           <button className="button secondary" onClick={() => navigate('/database')}>
             <Search size={16} />
@@ -74,16 +75,16 @@ export default function Dashboard() {
         <div className="hero-copy">
           <div className="hero-kicker">
             <span className="live-dot" />
-            OCTG MATERIALS / VERSION 1.0
+            MATERIAL SELECTION WORKSPACE
           </div>
           <h2>
-            Better decisions.
+            From well conditions
             <br />
-            <span>Grounded in evidence.</span>
+            to a material shortlist.
           </h2>
           <p>
-            Explore the global grade library. Define your well.
-            <br className="desktop-break" /> Build a transparent, traceable material shortlist.
+            Define the service environment, compare candidate grades, and review the evidence behind
+            each choice.
           </p>
           <div className="hero-actions">
             <button className="button mint" onClick={() => navigate('/selection')}>
@@ -96,83 +97,36 @@ export default function Dashboard() {
             </a>
           </div>
         </div>
-        <div className="pipe-illustration" aria-hidden="true">
-          <svg viewBox="0 0 460 270">
-            <defs>
-              <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-                <stop stopColor="#607679" />
-                <stop offset=".35" stopColor="#253e46" />
-                <stop offset=".72" stopColor="#112b35" />
-                <stop offset="1" stopColor="#456267" />
-              </linearGradient>
-              <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
-                <path d="M26 0H0V26" fill="none" stroke="#7babad" strokeWidth=".4" />
-              </pattern>
-            </defs>
-            <path d="M0 0H460V270H0Z" fill="url(#grid)" opacity=".2" />
-            <path
-              d="M80 155L265 48Q310 20 344 40L410 79Q440 99 416 122L229 231Q194 251 163 232L91 191Q64 176 80 155Z"
-              fill="url(#metal)"
-              stroke="#658b8b"
-            />
-            <path
-              d="M251 57L78 158M270 68L95 170M294 82L118 184M319 97L143 198M343 112L166 212"
-              stroke="#adc8c1"
-              opacity=".2"
-            />
-            <ellipse
-              cx="375"
-              cy="87"
-              rx="61"
-              ry="39"
-              transform="rotate(30 375 87)"
-              fill="#4c696a"
-              stroke="#95b2a9"
-            />
-            <ellipse
-              cx="375"
-              cy="87"
-              rx="47"
-              ry="27"
-              transform="rotate(30 375 87)"
-              fill="#102932"
-              stroke="#829e96"
-            />
-            <ellipse
-              cx="375"
-              cy="87"
-              rx="37"
-              ry="20"
-              transform="rotate(30 375 87)"
-              fill="#061923"
-            />
-            <path
-              d="M83 155L49 132M226 237L244 258M49 132L244 258M46 131L38 126M243 258L251 263"
-              stroke="#82b3aa"
-              strokeWidth=".8"
-              fill="none"
-            />
-            <path
-              d="M310 29L325 9H423M411 132L432 147V197"
-              stroke="#82b3aa"
-              strokeWidth=".8"
-              fill="none"
-            />
-            <circle cx="310" cy="29" r="2" fill="#b8e0ca" />
-            <circle cx="411" cy="132" r="2" fill="#b8e0ca" />
-            <text x="337" y="22" fill="#a0c1b7" fontSize="9" fontFamily="monospace">
-              OCTG / SECTION 01
-            </text>
-            <text x="252" y="251" fill="#a0c1b7" fontSize="9" fontFamily="monospace">
-              CASING + TUBING
-            </text>
-            <text x="418" y="217" fill="#a0c1b7" fontSize="9" fontFamily="monospace">
-              OD
-            </text>
-          </svg>
-          <span className="drawing-caption">ENGINEERING STARTS WITH THE RIGHT MATERIAL.</span>
+        <div className="schematic-inset">
+          <WellSchematic />
         </div>
       </section>
+      <nav className="workflow-strip" aria-label="Material selection workflow">
+        <a href="#/well">
+          <span>01</span>
+          <div>
+            <strong>Define the well</strong>
+            <small>Environment & design loads</small>
+          </div>
+          <ArrowRight size={16} />
+        </a>
+        <a href="#/selection">
+          <span>02</span>
+          <div>
+            <strong>Screen materials</strong>
+            <small>Suitability & qualification gaps</small>
+          </div>
+          <ArrowRight size={16} />
+        </a>
+        <a href="#/comparison">
+          <span>03</span>
+          <div>
+            <strong>Compare candidates</strong>
+            <small>Properties & source evidence</small>
+          </div>
+          <ArrowRight size={16} />
+        </a>
+      </nav>
       <div className="stats-grid">
         {[
           {
