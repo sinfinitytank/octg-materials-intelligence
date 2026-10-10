@@ -1,4 +1,3 @@
-import { APP_VERSION } from '../config';
 import {
   Component,
   lazy,
@@ -12,7 +11,6 @@ import {
   ArrowRight,
   BookOpen,
   ChevronLeft,
-  ChevronRight,
   CircleHelp,
   Database,
   FlaskConical,
@@ -45,10 +43,10 @@ const References = lazy(() => import('../pages/References'));
 const Settings = lazy(() => import('../pages/Settings'));
 const modules = [
   { path: '/', label: 'Dashboard', icon: LayoutDashboard },
-  { path: '/database', label: 'Materials Database', icon: Database },
   { path: '/well', label: 'Well Conditions', icon: Gauge },
   { path: '/selection', label: 'Material Selection', icon: FlaskConical },
   { path: '/comparison', label: 'Material Comparison', icon: GitCompareArrows },
+  { path: '/database', label: 'Materials Database', icon: Database },
   { path: '/cost', label: 'Cost Analysis', icon: CircleDollarSign },
   { path: '/references', label: 'Engineering References', icon: BookOpen },
   { path: '/settings', label: 'Settings', icon: Settings2 },
@@ -164,13 +162,6 @@ function Shell() {
         >
           <X size={20} />
         </button>
-        <div className="workspace-switch">
-          <span className="workspace-avatar">MI</span>
-          <span>
-            <strong>Engineering workspace</strong>
-            <small>LOCAL • V1.0</small>
-          </span>
-        </div>
         <div className="nav-heading">WORKSPACE</div>
         <nav>
           {modules.slice(0, 6).map(({ path: route, label, icon: Icon }) => (
@@ -190,7 +181,7 @@ function Shell() {
             </a>
           ))}
         </nav>
-        <div className="nav-heading resources-label">KNOWLEDGE & TOOLS</div>
+        <div className="nav-heading resources-label">REFERENCES</div>
         <nav>
           {modules.slice(6).map(({ path: route, label, icon: Icon }) => (
             <a
@@ -208,13 +199,12 @@ function Shell() {
         <div className="sidebar-bottom">
           <div className="sidebar-assurance">
             <ShieldCheck size={20} />
-            <strong>Engineering basis</strong>
+            <strong>Engineering review</strong>
             <p>
-              Preliminary screening supports engineering judgment. Qualification requires verified
-              evidence.
+              Screening is preliminary. Verify source data and qualification separately.
             </p>
             <a href="#/references">
-              Engineering methodology
+              Methodology & references
               <ArrowRight size={13} />
             </a>
           </div>
@@ -226,10 +216,6 @@ function Shell() {
             {collapsed ? <PanelLeftOpen size={17} /> : <PanelLeftClose size={17} />}
             <span>Collapse navigation</span>
           </button>
-          <div className="sidebar-version">
-            <span className="live-dot" />
-            Browser-side workspace<span>{APP_VERSION}</span>
-          </div>
         </div>
       </aside>
       <div className="workspace">
@@ -242,16 +228,9 @@ function Shell() {
             >
               <Menu size={21} />
             </button>
-            <span className="breadcrumb-root">Workspace</span>
-            <ChevronRight size={12} />
             <span>{active?.label || 'Not found'}</span>
           </div>
           <div className="topbar-right">
-            <span className="library-status">
-              <span className="live-dot" />
-              Local source library
-            </span>
-            <span className="topbar-divider" />
             <button
               className="icon-button"
               aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
@@ -266,7 +245,6 @@ function Shell() {
             >
               <CircleHelp size={18} />
             </a>
-            <span className="version-tag">V1.0</span>
           </div>
         </header>
         <main id="main-content" tabIndex={-1} className="main-content">

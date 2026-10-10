@@ -25,7 +25,7 @@ export default function Settings() {
       <PageTitle
         eyebrow="WORKSPACE / PREFERENCES"
         title="Settings"
-        description="Set your working environment and inspect the data behind this workspace."
+        description="Choose display units and review catalogue provenance."
         actions={
           <Badge>
             <SlidersHorizontal size={13} />
@@ -65,9 +65,9 @@ export default function Settings() {
             </select>
           </label>
           <p className="small muted">
-            Changing units converts the displayed well inputs. Canonical values remain MPa, °C, mm
-            and m. The material catalogue retains source yield in ksi and shows the converted MPa
-            value in details. Chloride uses mg/L; ppm by mass requires a solution density.
+            Well inputs convert for display; stored values remain canonical. Catalogue yield is
+            retained in ksi with converted MPa shown in details. Chloride uses mg/L; ppm by mass
+            requires solution density.
           </p>
         </section>
         <section className="panel">
@@ -105,9 +105,7 @@ export default function Settings() {
             </div>
           </dl>
           <p className="small muted">
-            Browser storage is specific to this site and browser profile. Export important scenarios
-            before clearing browser data. The application fetches its bundled catalogue and loads no
-            third-party manufacturer content until you open a source link.
+            Scenarios and quotations stay in this browser. Export them before clearing browser data.
           </p>
         </section>
         <section className="panel">

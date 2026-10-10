@@ -121,7 +121,7 @@ export default function Comparison() {
       <PageTitle
         eyebrow="MATERIALS / SIDE-BY-SIDE REVIEW"
         title="Material comparison"
-        description="Compare up to four source records with unknown values and evidence kept visible."
+        description="Review up to four grades side by side with missing values and source evidence."
         actions={
           <>
             {comparison.length > 0 && (

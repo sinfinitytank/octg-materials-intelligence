@@ -194,7 +194,7 @@ export default function Database() {
       <PageTitle
         eyebrow="MATERIALS / GLOBAL GRADE LIBRARY"
         title="Materials database"
-        description="Search source records, inspect their evidence, and compare the details that matter."
+        description="Search the catalogue, inspect source evidence and add grades to a comparison."
         actions={
           <button className="button secondary" onClick={exportMaterials}>
             <Download size={16} />

@@ -77,7 +77,7 @@ export default function Selection() {
       <PageTitle
         eyebrow="ENGINEERING / TRANSPARENT SCREENING"
         title="Material selection"
-        description="Screen against source information. Understand every exclusion and every remaining uncertainty."
+        description="Apply the well basis, then review candidates, exclusions and open gaps."
         actions={
           <>
             <button className="button secondary" onClick={() => navigate('/well')}>
@@ -123,9 +123,8 @@ export default function Selection() {
         </button>
       </div>
       <Notice>
-        <strong>Preliminary screening, with explicit uncertainty.</strong> Source grade names and
-        sour-service labels do not establish ISO 15156 / NACE MR0175 qualification. Preference
-        points never override an engineering exclusion.
+        <strong>Preliminary screening only.</strong> Source labels do not establish ISO 15156 / NACE
+        MR0175 qualification. Preference points never override an exclusion.
       </Notice>
       {!valid ? (
         <section className="panel validation-errors" role="alert">

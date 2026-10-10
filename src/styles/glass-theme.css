@@ -1,0 +1,239 @@
+/* Restrained glass surfaces over a cool, low-contrast engineering canvas. */
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(ellipse at 8% 2%, color-mix(in srgb, var(--teal) 13%, transparent), transparent 36rem),
+    radial-gradient(ellipse at 95% 68%, color-mix(in srgb, #91a7b4 10%, transparent), transparent 42rem);
+  background-attachment: fixed;
+}
+
+.sidebar {
+  color: var(--muted);
+  background: color-mix(in srgb, var(--sidebar) 84%, transparent);
+  border-right: 1px solid var(--glass-outline);
+  box-shadow: 8px 0 32px rgb(28 45 57 / 5%);
+  backdrop-filter: blur(22px) saturate(135%);
+  -webkit-backdrop-filter: blur(22px) saturate(135%);
+}
+
+.workspace-switch,
+.sidebar-assurance {
+  background: var(--glass-surface);
+  border-color: var(--glass-outline);
+  box-shadow: inset 0 1px rgb(255 255 255 / 35%);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--teal);
+  background: color-mix(in srgb, var(--teal-soft) 88%, transparent);
+}
+
+.nav-link:hover {
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--teal) 12%, transparent);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--glass-surface-strong) 86%, transparent);
+  border-color: var(--glass-outline);
+  box-shadow: 0 8px 26px rgb(22 38 49 / 5%);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+}
+
+.panel,
+.stat-card,
+.comparison-tray,
+.dialog,
+.hero-panel,
+.workflow-strip,
+.stats-grid,
+.selection-basis,
+.eligibility-card,
+.comparison-count,
+.notice,
+.popover {
+  background: var(--glass-surface);
+  border-color: var(--glass-outline);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(16px) saturate(130%);
+  -webkit-backdrop-filter: blur(16px) saturate(130%);
+}
+
+.panel,
+.dialog,
+.hero-panel,
+.selection-basis,
+.eligibility-card,
+.comparison-count,
+.notice,
+.popover {
+  border-radius: var(--radius-large);
+}
+
+.panel {
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.stat-card {
+  transition: border-color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--teal) 52%, var(--glass-outline));
+  box-shadow: 0 18px 38px rgb(30 58 70 / 12%), inset 0 1px rgb(255 255 255 / 54%);
+}
+
+.eligibility-card.active {
+  border-color: var(--teal);
+  background: color-mix(in srgb, var(--teal-soft) 78%, var(--glass-surface));
+}
+
+.hero-panel {
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 85% 12%, color-mix(in srgb, var(--teal) 15%, transparent), transparent 24rem),
+    var(--glass-surface-strong);
+  border: 1px solid var(--glass-outline);
+}
+
+.hero-panel .hero-kicker,
+.hero-panel .hero-link {
+  color: var(--teal);
+}
+
+.hero-panel .hero-copy > p {
+  color: var(--muted);
+}
+
+.schematic-inset {
+  border: 1px solid color-mix(in srgb, var(--glass-outline) 75%, transparent);
+  border-radius: var(--radius-large);
+  background: color-mix(in srgb, var(--schematic-background) 92%, transparent);
+  box-shadow: inset 0 1px rgb(255 255 255 / 8%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.workflow-strip,
+.stats-grid {
+  border-color: var(--glass-outline);
+}
+
+.workflow-strip {
+  background: color-mix(in srgb, var(--glass-surface-strong) 88%, transparent);
+  border-radius: 0 0 var(--radius-large) var(--radius-large);
+}
+
+.stats-grid {
+  background: color-mix(in srgb, var(--glass-surface-strong) 78%, transparent);
+  border-radius: var(--radius-large);
+}
+
+.notice {
+  background: color-mix(in srgb, var(--glass-surface-strong) 88%, transparent);
+}
+
+.notice-danger {
+  background: color-mix(in srgb, var(--red-soft) 86%, transparent);
+}
+
+.notice-warning {
+  background: color-mix(in srgb, var(--amber-soft) 82%, var(--glass-surface));
+}
+
+.button.secondary,
+.version-tag,
+.compare-toggle,
+.icon-button:hover {
+  background: color-mix(in srgb, var(--glass-surface-strong) 88%, transparent);
+  border-color: var(--glass-outline);
+  box-shadow: 0 4px 12px rgb(29 48 59 / 5%);
+}
+
+.button.secondary:hover:not(:disabled),
+.icon-button:hover {
+  background: color-mix(in srgb, var(--teal-soft) 82%, var(--glass-surface-strong));
+}
+
+.button.primary,
+.button.mint {
+  box-shadow: 0 7px 18px color-mix(in srgb, var(--teal) 20%, transparent);
+}
+
+input,
+select,
+textarea,
+.search-field {
+  background: color-mix(in srgb, var(--input) 89%, transparent);
+  border-color: color-mix(in srgb, var(--line) 82%, var(--glass-outline));
+  box-shadow: inset 0 1px rgb(255 255 255 / 28%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.materials-table th,
+.panel-footer,
+.pagination,
+.load-more,
+.selection-report,
+.assessment-reason,
+.table-meta {
+  background: color-mix(in srgb, var(--panel-soft) 88%, transparent);
+}
+
+.materials-table th {
+  border-color: var(--glass-outline);
+}
+
+.materials-table tbody tr:hover {
+  background: color-mix(in srgb, var(--teal-soft) 62%, transparent);
+}
+
+.dialog {
+  background: var(--glass-surface-strong);
+  border-color: var(--glass-outline);
+  box-shadow: 0 28px 100px rgb(4 12 18 / 34%), inset 0 1px rgb(255 255 255 / 8%);
+}
+
+.dialog::backdrop {
+  background: rgb(8 15 21 / 58%);
+  backdrop-filter: blur(8px);
+}
+
+.comparison-tray {
+  border: 1px solid var(--glass-outline);
+  border-radius: var(--radius-large);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .sidebar,
+  .topbar,
+  .panel,
+  .stat-card,
+  .comparison-tray,
+  .dialog,
+  .hero-panel,
+  .workflow-strip,
+  .stats-grid,
+  .selection-basis,
+  .eligibility-card,
+  .comparison-count,
+  .notice,
+  .popover {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stat-card,
+  .panel {
+    transition: none;
+  }
+}

@@ -197,7 +197,7 @@ export default function Well() {
       <PageTitle
         eyebrow="ENGINEERING / DESIGN BASIS"
         title="Well conditions"
-        description="Define the conditions and preferences behind every screening decision."
+        description="Set the operating environment, design requirements and ranking preferences."
         actions={
           <>
             <button className="button secondary" onClick={() => fileRef.current?.click()}>

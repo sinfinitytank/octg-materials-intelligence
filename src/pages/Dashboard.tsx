@@ -9,21 +9,20 @@ import {
   Search,
   ChevronRight,
   FileCheck2,
-  CircleDot,
 } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { useApp } from '../app/context';
 import { navigate } from '../hooks/useRoute';
 import { Badge, PageTitle } from '../components/UI';
 const palette = [
-  '#117f79',
-  '#278f88',
-  '#45a39a',
-  '#70b7ac',
-  '#a2cdc0',
-  '#bbc3af',
-  '#b9b09a',
-  '#928f86',
+  'var(--chart-1)',
+  'var(--chart-2)',
+  'var(--chart-3)',
+  'var(--chart-4)',
+  'var(--chart-5)',
+  'var(--chart-6)',
+  'var(--chart-7)',
+  'var(--chart-8)',
 ];
 export default function Dashboard() {
   const { dataset } = useApp();
@@ -61,8 +60,8 @@ export default function Dashboard() {
     <>
       <PageTitle
         eyebrow="WORKSPACE / OVERVIEW"
-        title="Materials intelligence"
-        description="OCTG grade library, well design basis, and preliminary material screening."
+        title="OCTG material selection"
+        description="A traceable workflow from well conditions to candidate review."
         actions={
           <button className="button secondary" onClick={() => navigate('/database')}>
             <Search size={16} />
@@ -73,26 +72,21 @@ export default function Dashboard() {
       />
       <section className="hero-panel">
         <div className="hero-copy">
-          <div className="hero-kicker">
-            <span className="live-dot" />
-            MATERIAL SELECTION WORKSPACE
-          </div>
           <h2>
-            From well conditions
+            Start with the
             <br />
-            to a material shortlist.
+            service conditions.
           </h2>
           <p>
-            Define the service environment, compare candidate grades, and review the evidence behind
-            each choice.
+            Set the design basis, screen grades and compare supporting evidence.
           </p>
           <div className="hero-actions">
             <button className="button mint" onClick={() => navigate('/selection')}>
-              Start material screening
+              Screen materials
               <ArrowRight size={16} />
             </button>
             <a href="#/well" className="hero-link">
-              Define well conditions
+              Edit well basis
               <ChevronRight size={16} />
             </a>
           </div>
@@ -133,25 +127,25 @@ export default function Dashboard() {
             icon: Database,
             value: materials.length,
             label: 'Material records',
-            sub: 'Preserved from your source library',
+            sub: 'Source catalogue',
           },
           {
             icon: Factory,
             value: manufacturers.length,
-            label: 'Manufacturer labels',
-            sub: 'Plus standardized API references',
+            label: 'Manufacturers',
+            sub: 'Catalogue contributors',
           },
           {
             icon: Layers3,
             value: families.length,
             label: 'Material families',
-            sub: 'Carbon steel through nickel alloys',
+            sub: 'Source classifications',
           },
           {
             icon: ShieldCheck,
             value: 0,
-            label: 'Independently verified',
-            sub: `${materials.length} records need verification`,
+            label: 'Verified records',
+            sub: 'Source review required',
             warning: true,
           },
         ].map(({ icon: Icon, ...stat }) => (
@@ -181,8 +175,8 @@ export default function Dashboard() {
         <section className="panel supplier-panel">
           <div className="section-heading">
             <div>
-              <h2>Global supplier coverage</h2>
-              <p>Leading manufacturers by source record count</p>
+              <h2>Manufacturer records</h2>
+              <p>Largest catalogue contributors</p>
             </div>
             <Badge>{manufacturers.length} labels</Badge>
           </div>
@@ -198,7 +192,7 @@ export default function Dashboard() {
                   type="number"
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#8b9698', fontSize: 11 }}
+                  tick={{ fill: 'var(--muted)', fontSize: 'var(--type-caption)' }}
                   allowDecimals={false}
                 />
                 <YAxis
@@ -207,14 +201,14 @@ export default function Dashboard() {
                   width={123}
                   axisLine={false}
                   tickLine={false}
-                  tick={{ fill: '#6d7c80', fontSize: 11 }}
+                  tick={{ fill: 'var(--subtle)', fontSize: 'var(--type-caption)' }}
                 />
                 <Tooltip
-                  cursor={{ fill: 'rgba(17,127,121,.06)' }}
+                  cursor={{ fill: 'color-mix(in srgb, var(--teal) 8%, transparent)' }}
                   contentStyle={{
                     background: 'var(--panel)',
                     border: '1px solid var(--line)',
-                    borderRadius: 8,
+                    borderRadius: 'var(--radius-medium)',
                     color: 'var(--text)',
                   }}
                 />
@@ -222,28 +216,24 @@ export default function Dashboard() {
                   isAnimationActive={false}
                   dataKey="value"
                   name="Records"
-                  radius={[0, 3, 3, 0]}
+                  radius={[0, 4, 4, 0]}
                   onClick={(_, index) =>
                     navigate('/database?manufacturer=' + encodeURIComponent(suppliers[index].name))
                   }
                 >
                   {suppliers.map((_, i) => (
-                    <Cell key={i} fill={i === 0 ? '#117f79' : '#a8cec4'} cursor="pointer" />
+                    <Cell key={i} fill={palette[i % palette.length]} cursor="pointer" />
                   ))}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
-          </div>
-          <div className="panel-footer">
-            Select a supplier to explore its records
-            <ArrowUpRight size={14} />
           </div>
         </section>
         <section className="panel">
           <div className="section-heading">
             <div>
               <h2>Material family mix</h2>
-              <p>Alloy coverage across the complete library</p>
+              <p>Catalogue classifications</p>
             </div>
             <Layers3 size={17} className="muted" />
           </div>
@@ -279,10 +269,6 @@ export default function Dashboard() {
                 </span>
               </button>
             ))}
-          </div>
-          <div className="panel-footer">
-            Source classifications; no inferred alloy chemistry
-            <CircleDot size={14} />
           </div>
         </section>
       </div>
@@ -323,7 +309,7 @@ export default function Dashboard() {
           <div className="section-heading">
             <div>
               <h2>Evidence & traceability</h2>
-              <p>Know what the source can support</p>
+              <p>Source coverage and review status</p>
             </div>
             <FileCheck2 size={19} />
           </div>
@@ -338,8 +324,7 @@ export default function Dashboard() {
             <i style={{ width: `${(sourceLinked / materials.length) * 100}%` }} />
           </div>
           <p className="evidence-note">
-            A source link is a starting point. All imported records remain{' '}
-            <strong>unverified</strong> until documentation and applicability are reviewed.
+            Source links aid traceability. Review records for applicability before qualification.
           </p>
           <div className="catalog-counts">
             <span>
@@ -357,10 +342,6 @@ export default function Dashboard() {
             <ArrowRight size={15} />
           </a>
         </section>
-      </div>
-      <div className="workspace-footer">
-        <span>Source-linked catalogue. Engineering qualification requires separate review.</span>
-        <span className="mono">DATA / {dataset.dataVersion}</span>
       </div>
     </>
   );
