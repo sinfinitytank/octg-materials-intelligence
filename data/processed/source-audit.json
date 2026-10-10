@@ -1,0 +1,1936 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-10.1",
+  "sources": {
+    "OCTG_API5CT_5CRA_Global_Grade_Master_2026.xlsx": {
+      "sha256": "323732bdf8522f49da694f5acc52faee1510142f6fd41956a38991fc1ce73239",
+      "bytes": 82242
+    },
+    "OCTG_Well_Material_Selection_Excel_Dashboard.xlsx": {
+      "sha256": "1a5f111775f5ae1040e6b0cde9161283f7c92b3e2466ea2a4180451c37408d8b",
+      "bytes": 175949
+    },
+    "OCTG_Well_Material_Selector_Interactive.html": {
+      "sha256": "d90aaae9961d877b016289485acbb40225173a73b2716da8e2a3fd20d2f90d53",
+      "bytes": 459945
+    },
+    "octg_master_grades.csv": {
+      "sha256": "e589a46d8391dfdb0a93c80e730cfc98b64244d9e3b4e12a60133aed76ef9812",
+      "bytes": 235255
+    }
+  },
+  "csv": {
+    "rows": 450,
+    "columns": [
+      "ID",
+      "Supplier",
+      "Region",
+      "Grade",
+      "Listing type",
+      "Standard context",
+      "Material family",
+      "Service / use",
+      "Typical application",
+      "H2S suitability",
+      "CO2 corrosion",
+      "High collapse",
+      "SMYS ksi",
+      "UNS",
+      "5CRA Group",
+      "5CRA Category",
+      "Relative cost tier",
+      "Price low USD/t",
+      "Price high USD/t",
+      "Price evidence",
+      "Vendor quote USD/t",
+      "Source URL",
+      "Source status",
+      "Technical notes",
+      "Reviewed"
+    ],
+    "uniqueIDs": 450,
+    "duplicateSupplierGrade": [],
+    "repeatedGradeNames": {
+      "C110": 3,
+      "C90": 3,
+      "H40": 3,
+      "J55": 5,
+      "K55": 5,
+      "L80": 2,
+      "L80 Type 1": 2,
+      "N80": 2,
+      "N80 Type 1": 3,
+      "N80 Type Q": 3,
+      "P110": 4,
+      "P110 HC": 2,
+      "Q125": 3,
+      "R95": 3,
+      "T95": 3
+    },
+    "missingByColumn": {
+      "ID": 0,
+      "Supplier": 0,
+      "Region": 0,
+      "Grade": 0,
+      "Listing type": 0,
+      "Standard context": 0,
+      "Material family": 0,
+      "Service / use": 0,
+      "Typical application": 0,
+      "H2S suitability": 0,
+      "CO2 corrosion": 0,
+      "High collapse": 0,
+      "SMYS ksi": 10,
+      "UNS": 399,
+      "5CRA Group": 401,
+      "5CRA Category": 388,
+      "Relative cost tier": 0,
+      "Price low USD/t": 444,
+      "Price high USD/t": 444,
+      "Price evidence": 0,
+      "Vendor quote USD/t": 450,
+      "Source URL": 0,
+      "Source status": 0,
+      "Technical notes": 300,
+      "Reviewed": 0
+    },
+    "supplierCounts": {
+      "API reference": 64,
+      "ArcelorMittal": 12,
+      "Borusan Mannesmann": 10,
+      "Interpipe": 11,
+      "JFE Steel": 36,
+      "Jindal Pipes": 4,
+      "Jindal SAW / Jindal Tubular": 6,
+      "Nippon Steel": 50,
+      "SeAH Steel": 2,
+      "TMK": 7,
+      "Tenaris": 84,
+      "Tianjin Huajin": 4,
+      "Tianjin Pipe (TPCO)": 11,
+      "U. S. Steel Tubular": 12,
+      "Vallourec": 68,
+      "voestalpine Tubulars": 69
+    },
+    "familyCounts": {
+      "Carbon / low alloy": 303,
+      "Duplex 22Cr": 8,
+      "Fe-base austenitic CRA": 10,
+      "Low-Cr alloy steel": 14,
+      "Martensitic 13Cr": 23,
+      "Martensitic 9Cr": 1,
+      "Modified / super 13Cr": 31,
+      "Ni-base CRA": 32,
+      "Super duplex 25Cr": 28
+    },
+    "listingTypeCounts": {
+      "API CRA category/grade": 49,
+      "API baseline": 15,
+      "Manufacturer CRA alloy/strength offering": 13,
+      "Proprietary grade": 329,
+      "Supplier-listed API grade": 27,
+      "Supplier-listed grade": 6,
+      "Supplier-named series/family": 11
+    },
+    "knownYieldCount": 440,
+    "pricedIDs": [
+      "OCTG-0004",
+      "OCTG-0005",
+      "OCTG-0006",
+      "OCTG-0007",
+      "OCTG-0008",
+      "OCTG-0009"
+    ],
+    "familyListingIDs": [
+      "OCTG-0403",
+      "OCTG-0404",
+      "OCTG-0405",
+      "OCTG-0406",
+      "OCTG-0407",
+      "OCTG-0408",
+      "OCTG-0409",
+      "OCTG-0410",
+      "OCTG-0411",
+      "OCTG-0412",
+      "OCTG-0413"
+    ],
+    "exactM65GradeIDs": []
+  },
+  "workbooks": {
+    "OCTG_API5CT_5CRA_Global_Grade_Master_2026.xlsx": {
+      "MASTER GRADES": {
+        "xmlRowCount": 451,
+        "nonemptyRows": 451,
+        "maxColumns": 25,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": [],
+        "csvComparison": {
+          "rowCount": 450,
+          "distinctIDs": 450,
+          "missingIDs": [],
+          "extraIDs": [],
+          "fieldDifferenceCount": 0,
+          "fieldDifferences": []
+        }
+      },
+      "API 5CT": {
+        "xmlRowCount": 16,
+        "nonemptyRows": 16,
+        "maxColumns": 25,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "API 5CRA": {
+        "xmlRowCount": 50,
+        "nonemptyRows": 50,
+        "maxColumns": 25,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "PRICE BENCHMARKS": {
+        "xmlRowCount": 18,
+        "nonemptyRows": 18,
+        "maxColumns": 9,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "SUPPLIER COVERAGE": {
+        "xmlRowCount": 16,
+        "nonemptyRows": 16,
+        "maxColumns": 8,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "SOURCES": {
+        "xmlRowCount": 37,
+        "nonemptyRows": 37,
+        "maxColumns": 4,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "COST ESTIMATOR": {
+        "xmlRowCount": 17,
+        "nonemptyRows": 17,
+        "maxColumns": 6,
+        "formulaCount": 7,
+        "formulaCachePresentCount": 7,
+        "formulaSamples": [
+          {
+            "cell": "B14",
+            "formula": "=B7*B8",
+            "cachedValue": "1220"
+          },
+          {
+            "cell": "B15",
+            "formula": "=B6*3.280839895*B7*B8*0.45359237/1000",
+            "cachedValue": "41.75788025639465"
+          },
+          {
+            "cell": "B16",
+            "formula": "=B15*B9",
+            "cachedValue": "75164.18446151038"
+          },
+          {
+            "cell": "B17",
+            "formula": "=B16*B10/100",
+            "cachedValue": "9019.702135381245"
+          },
+          {
+            "cell": "B18",
+            "formula": "=B15*B11",
+            "cachedValue": "8351.57605127893"
+          },
+          {
+            "cell": "B19",
+            "formula": "=SUM(B16:B18)",
+            "cachedValue": "92535.46264817055"
+          },
+          {
+            "cell": "B20",
+            "formula": "=IF(B14>0,B19/B14,0)",
+            "cachedValue": "75.84873987554963"
+          }
+        ]
+      },
+      "READ ME": {
+        "xmlRowCount": 19,
+        "nonemptyRows": 19,
+        "maxColumns": 8,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "DASHBOARD": {
+        "xmlRowCount": 20,
+        "nonemptyRows": 20,
+        "maxColumns": 8,
+        "formulaCount": 3,
+        "formulaCachePresentCount": 3,
+        "formulaSamples": [
+          {
+            "cell": "A4",
+            "formula": "=COUNTA('MASTER GRADES'!D2:D451)",
+            "cachedValue": "450"
+          },
+          {
+            "cell": "C4",
+            "formula": "=COUNTIF('MASTER GRADES'!B2:B451,\"API reference\")",
+            "cachedValue": "64"
+          },
+          {
+            "cell": "G4",
+            "formula": "=COUNT('MASTER GRADES'!R2:R451)",
+            "cachedValue": "6"
+          }
+        ]
+      }
+    },
+    "OCTG_Well_Material_Selection_Excel_Dashboard.xlsx": {
+      "MASTER GRADES": {
+        "xmlRowCount": 451,
+        "nonemptyRows": 451,
+        "maxColumns": 25,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": [],
+        "csvComparison": {
+          "rowCount": 450,
+          "distinctIDs": 450,
+          "missingIDs": [],
+          "extraIDs": [],
+          "fieldDifferenceCount": 0,
+          "fieldDifferences": []
+        }
+      },
+      "API 5CT": {
+        "xmlRowCount": 16,
+        "nonemptyRows": 16,
+        "maxColumns": 25,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "API 5CRA": {
+        "xmlRowCount": 50,
+        "nonemptyRows": 50,
+        "maxColumns": 25,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "PRICE BENCHMARKS": {
+        "xmlRowCount": 18,
+        "nonemptyRows": 18,
+        "maxColumns": 9,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "SUPPLIER COVERAGE": {
+        "xmlRowCount": 16,
+        "nonemptyRows": 16,
+        "maxColumns": 8,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "SOURCES": {
+        "xmlRowCount": 37,
+        "nonemptyRows": 37,
+        "maxColumns": 4,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "COST ESTIMATOR": {
+        "xmlRowCount": 17,
+        "nonemptyRows": 17,
+        "maxColumns": 6,
+        "formulaCount": 7,
+        "formulaCachePresentCount": 7,
+        "formulaSamples": [
+          {
+            "cell": "B14",
+            "formula": "=B7*B8",
+            "cachedValue": "1220"
+          },
+          {
+            "cell": "B15",
+            "formula": "=B6*3.280839895*B7*B8*0.45359237/1000",
+            "cachedValue": "41.75788025639465"
+          },
+          {
+            "cell": "B16",
+            "formula": "=B15*B9",
+            "cachedValue": "75164.18446151038"
+          },
+          {
+            "cell": "B17",
+            "formula": "=B16*B10/100",
+            "cachedValue": "9019.702135381245"
+          },
+          {
+            "cell": "B18",
+            "formula": "=B15*B11",
+            "cachedValue": "8351.57605127893"
+          },
+          {
+            "cell": "B19",
+            "formula": "=SUM(B16:B18)",
+            "cachedValue": "92535.46264817055"
+          },
+          {
+            "cell": "B20",
+            "formula": "=IF(B14>0,B19/B14,0)",
+            "cachedValue": "75.84873987554963"
+          }
+        ]
+      },
+      "READ ME": {
+        "xmlRowCount": 19,
+        "nonemptyRows": 19,
+        "maxColumns": 8,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      },
+      "DASHBOARD": {
+        "xmlRowCount": 20,
+        "nonemptyRows": 20,
+        "maxColumns": 8,
+        "formulaCount": 3,
+        "formulaCachePresentCount": 3,
+        "formulaSamples": [
+          {
+            "cell": "A4",
+            "formula": "=COUNTA('MASTER GRADES'!D2:D451)",
+            "cachedValue": "450"
+          },
+          {
+            "cell": "C4",
+            "formula": "=COUNTIF('MASTER GRADES'!B2:B451,\"API reference\")",
+            "cachedValue": "64"
+          },
+          {
+            "cell": "G4",
+            "formula": "=COUNT('MASTER GRADES'!R2:R451)",
+            "cachedValue": "6"
+          }
+        ]
+      },
+      "WELL INPUTS": {
+        "xmlRowCount": 27,
+        "nonemptyRows": 27,
+        "maxColumns": 7,
+        "formulaCount": 15,
+        "formulaCachePresentCount": 15,
+        "formulaSamples": [
+          {
+            "cell": "F4",
+            "formula": "=IF(B5>0,\"VERIFY ISO 15156\",\"CHECK DESIGN\")",
+            "cachedValue": "CHECK DESIGN"
+          },
+          {
+            "cell": "F5",
+            "formula": "=IF(AND(B4=\"Wet\",B6>0),\"CORROSION MODEL\",\"NOT FLAGGED\")",
+            "cachedValue": "CORROSION MODEL"
+          },
+          {
+            "cell": "F6",
+            "formula": "=IF(B12=\"Yes\",\"RATING REQUIRED\",\"NORMAL DESIGN\")",
+            "cachedValue": "NORMAL DESIGN"
+          },
+          {
+            "cell": "F7",
+            "formula": "=IF(B10=\"Yes\",\"SPECIAL REVIEW\",IF(B10=\"Unknown\",\"DATA NEEDED\",\"NOT REPORTED\"))",
+            "cachedValue": "NOT REPORTED"
+          },
+          {
+            "cell": "F8",
+            "formula": "=IF(AND(B4=\"Wet\",OR(B8>0,B7>0)),\"LIMITS REQUIRED\",\"CHECK EXPOSURE\")",
+            "cachedValue": "LIMITS REQUIRED"
+          },
+          {
+            "cell": "F9",
+            "formula": "=IF(OR(B5>0,B10=\"Yes\",B4=\"Unknown\"),\"ENVIRONMENT REVIEW\",\"VERIFY STANDARD LIMITS\")",
+            "cachedValue": "VERIFY STANDARD LIMITS"
+          },
+          {
+            "cell": "F12",
+            "formula": "=IF(B9<5,\"ACIDIC REVIEW\",\"VERIFY pH ENVELOPE\")",
+            "cachedValue": "VERIFY pH ENVELOPE"
+          },
+          {
+            "cell": "F13",
+            "formula": "=IF(B7>=120,\"HIGH-T RECHECK\",\"QUALIFY TEMPERATURE\")",
+            "cachedValue": "QUALIFY TEMPERATURE"
+          },
+          {
+            "cell": "F14",
+            "formula": "=IF(AND(B4=\"Wet\",B8>0),\"PITTING/SCC REVIEW\",\"CHECK BRINE\")",
+            "cachedValue": "PITTING/SCC REVIEW"
+          },
+          {
+            "cell": "F15",
+            "formula": "=IF(B4=\"Unknown\",\"UNKNOWN EXPOSURE\",\"CONFIRM UPSETS\")",
+            "cachedValue": "CONFIRM UPSETS"
+          }
+        ]
+      },
+      "SCREENING": {
+        "xmlRowCount": 451,
+        "nonemptyRows": 451,
+        "maxColumns": 20,
+        "formulaCount": 3600,
+        "formulaCachePresentCount": 3600,
+        "formulaSamples": [
+          {
+            "cell": "L2",
+            "formula": "=IF(F2=\"\",\"UNKNOWN\",IF(F2<'WELL INPUTS'!$B$11,\"BELOW\",\"OK\"))",
+            "cachedValue": "OK"
+          },
+          {
+            "cell": "M2",
+            "formula": "=IF(AND('WELL INPUTS'!$B$4=\"Wet\",'WELL INPUTS'!$B$5>0),IF(I2=\"Yes\",\"CATALOG SOUR\",\"NOT LISTED\"),\"N/A\")",
+            "cachedValue": "N/A"
+          },
+          {
+            "cell": "N2",
+            "formula": "=IF(AND('WELL INPUTS'!$B$4=\"Wet\",'WELL INPUTS'!$B$6>0),IF(J2=\"Yes\",\"ALLOY FAMILY\",\"CORROSION CONTROL\"),\"N/A\")",
+            "cachedValue": "CORROSION CONTROL"
+          },
+          {
+            "cell": "O2",
+            "formula": "=IF('WELL INPUTS'!$B$12=\"Yes\",IF(G2=\"Yes\",\"CLAIMED\",\"NOT LISTED\"),\"N/A\")",
+            "cachedValue": "N/A"
+          },
+          {
+            "cell": "P2",
+            "formula": "=IF(OR('WELL INPUTS'!$B$13=\"Unrestricted\",CODE(H2)<=CODE('WELL INPUTS'!$B$13)),\"WITHIN TIER\",\"OVER CAP\")",
+            "cachedValue": "WITHIN TIER"
+          },
+          {
+            "cell": "Q2",
+            "formula": "=MAX(0,MIN(100,43+IF(L2=\"OK\",14,-20)+IF(M2=\"CATALOG SOUR\",24,IF(M2=\"NOT LISTED\",-18,0))+IF(N2=\"ALLOY FAMILY\",14,IF(N2=\"CORROSION CONTROL\",-13,0))+IF(O2=\"CLAIMED\",17,IF(O2=\"NOT LISTED\",-14,0))+IF(K2=\"Yes\",-15,0)+IF('WELL INPUTS'!$B$10=\"Yes\",-17,0)))",
+            "cachedValue": "29"
+          },
+          {
+            "cell": "R2",
+            "formula": "=IF(L2=\"BELOW\",\"EXCLUDE — STRENGTH\",IF(P2=\"OVER CAP\",\"EXCLUDE — COST\",IF(K2=\"Yes\",IF('WELL INPUTS'!$B$14=\"No\",\"EXCLUDE — REFERENCE\",\"REFERENCE ONLY\"),IF(OR(L2=\"UNKNOWN\",M2=\"NOT LISTED\",N2=\"CORROSION CONTROL\",O2=\"NOT LISTED\",'WELL INPUTS'!$B$10=\"Yes\",'WELL INPUTS'!$B$4=\"Unknown\"),\"REVIEW\",\"CANDIDATE — VERIFY\"))))",
+            "cachedValue": "EXCLUDE — REFERENCE"
+          },
+          {
+            "cell": "S2",
+            "formula": "=IF(L2=\"BELOW\",\"Increase minimum grade strength\",IF(P2=\"OVER CAP\",\"Relax cost tier or exclude\",IF(K2=\"Yes\",\"Identify qualified manufacturer grade\",IF(M2=\"NOT LISTED\",\"Confirm sour-service claim and ISO 15156\",IF(O2=\"NOT LISTED\",\"Obtain manufacturer collapse curve\",IF(N2=\"CORROSION CONTROL\",\"Model CO2 corrosion; review inhibition\",\"Confirm corrosion, cracking, loads and connection\"))))))",
+            "cachedValue": "Identify qualified manufacturer grade"
+          },
+          {
+            "cell": "L3",
+            "formula": "=IF(F3=\"\",\"UNKNOWN\",IF(F3<'WELL INPUTS'!$B$11,\"BELOW\",\"OK\"))",
+            "cachedValue": "OK"
+          },
+          {
+            "cell": "M3",
+            "formula": "=IF(AND('WELL INPUTS'!$B$4=\"Wet\",'WELL INPUTS'!$B$5>0),IF(I3=\"Yes\",\"CATALOG SOUR\",\"NOT LISTED\"),\"N/A\")",
+            "cachedValue": "N/A"
+          }
+        ]
+      },
+      "SELECTION METHODOLOGY": {
+        "xmlRowCount": 22,
+        "nonemptyRows": 22,
+        "maxColumns": 8,
+        "formulaCount": 0,
+        "formulaCachePresentCount": 0,
+        "formulaSamples": []
+      }
+    }
+  },
+  "html": {
+    "csvComparison": {
+      "rowCount": 450,
+      "distinctIDs": 450,
+      "missingIDs": [],
+      "extraIDs": [],
+      "fieldDifferenceCount": 0,
+      "fieldDifferences": []
+    },
+    "embeddedRecords": 450
+  },
+  "sharedWorkbookSheetComparison": {
+    "MASTER GRADES": true,
+    "API 5CT": true,
+    "API 5CRA": true,
+    "PRICE BENCHMARKS": true,
+    "SUPPLIER COVERAGE": true,
+    "SOURCES": true,
+    "COST ESTIMATOR": true,
+    "READ ME": true,
+    "DASHBOARD": true
+  },
+  "legacyLogicComparison": {
+    "method": "Static transcription of supplied HTML assess() and SCREENING Q-column formulas. All presets use wet water and unrestricted cost. Not a spreadsheet recalculation or qualification.",
+    "flagDifferenceCount": 0,
+    "flagDifferences": [],
+    "presets": {
+      "sweet": {
+        "inputs": {
+          "yield": 55,
+          "h2s": 0,
+          "co2": 0.1,
+          "cl": 5000,
+          "temp": 60,
+          "sulfur": false,
+          "collapse": false
+        },
+        "scoreDifferenceCount": 15,
+        "examples": [
+          {
+            "id": "OCTG-0003",
+            "grade": "H40",
+            "htmlScore": 15,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0101",
+            "grade": "TN 35HD",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0102",
+            "grade": "TN 45HD",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0403",
+            "grade": "TP-High-collapse family",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0405",
+            "grade": "TP-Thermal-recovery family",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0406",
+            "grade": "TP-2205 duplex series",
+            "htmlScore": 57,
+            "excelScore": 37
+          },
+          {
+            "id": "OCTG-0407",
+            "grade": "TP-Alloy 028 series",
+            "htmlScore": 57,
+            "excelScore": 37
+          },
+          {
+            "id": "OCTG-0408",
+            "grade": "TP-13Cr series",
+            "htmlScore": 57,
+            "excelScore": 37
+          },
+          {
+            "id": "OCTG-0409",
+            "grade": "TP-HP13Cr series",
+            "htmlScore": 57,
+            "excelScore": 37
+          },
+          {
+            "id": "OCTG-0410",
+            "grade": "TP-SUP13Cr series",
+            "htmlScore": 57,
+            "excelScore": 37
+          },
+          {
+            "id": "OCTG-0411",
+            "grade": "TP-Alloy 825 series",
+            "htmlScore": 57,
+            "excelScore": 37
+          },
+          {
+            "id": "OCTG-0412",
+            "grade": "TP-G3 alloy series",
+            "htmlScore": 57,
+            "excelScore": 37
+          }
+        ]
+      },
+      "co2": {
+        "inputs": {
+          "yield": 80,
+          "h2s": 0,
+          "co2": 5,
+          "cl": 15000,
+          "temp": 85,
+          "sulfur": false,
+          "collapse": false
+        },
+        "scoreDifferenceCount": 39,
+        "examples": [
+          {
+            "id": "OCTG-0003",
+            "grade": "H40",
+            "htmlScore": 15,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0004",
+            "grade": "J55",
+            "htmlScore": 15,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0005",
+            "grade": "K55",
+            "htmlScore": 15,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0015",
+            "grade": "22-5-3 / S31803 / 65",
+            "htmlScore": 42,
+            "excelScore": 22
+          },
+          {
+            "id": "OCTG-0047",
+            "grade": "25-7-3 / S31260 / 75",
+            "htmlScore": 42,
+            "excelScore": 22
+          },
+          {
+            "id": "OCTG-0065",
+            "grade": "K55-IC",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0101",
+            "grade": "TN 35HD",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0102",
+            "grade": "TN 45HD",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0103",
+            "grade": "TN 55LT",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0104",
+            "grade": "TN 55TH",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0105",
+            "grade": "TN 55TL",
+            "htmlScore": 30,
+            "excelScore": 10
+          },
+          {
+            "id": "OCTG-0106",
+            "grade": "TN 60HD",
+            "htmlScore": 30,
+            "excelScore": 10
+          }
+        ],
+        "cachedScoreMismatchCount": 0,
+        "cachedScoreMismatchExamples": []
+      },
+      "sour": {
+        "inputs": {
+          "yield": 95,
+          "h2s": 0.1,
+          "co2": 7,
+          "cl": 25000,
+          "temp": 100,
+          "sulfur": false,
+          "collapse": true
+        },
+        "scoreDifferenceCount": 269,
+        "examples": [
+          {
+            "id": "OCTG-0002",
+            "grade": "C90",
+            "htmlScore": 25,
+            "excelScore": 5
+          },
+          {
+            "id": "OCTG-0006",
+            "grade": "L80 Type 1",
+            "htmlScore": 25,
+            "excelScore": 5
+          },
+          {
+            "id": "OCTG-0013",
+            "grade": "22-5-3 / S31803 / 110",
+            "htmlScore": 72,
+            "excelScore": 66
+          },
+          {
+            "id": "OCTG-0014",
+            "grade": "22-5-3 / S31803 / 125",
+            "htmlScore": 72,
+            "excelScore": 66
+          },
+          {
+            "id": "OCTG-0015",
+            "grade": "22-5-3 / S31803 / 65",
+            "htmlScore": 58,
+            "excelScore": 32
+          },
+          {
+            "id": "OCTG-0016",
+            "grade": "22-35-4 / N08135 / 110",
+            "htmlScore": 72,
+            "excelScore": 66
+          },
+          {
+            "id": "OCTG-0017",
+            "grade": "25-32-3 / N08535 / 110",
+            "htmlScore": 72,
+            "excelScore": 66
+          },
+          {
+            "id": "OCTG-0018",
+            "grade": "25-32-3 / N08535 / 125",
+            "htmlScore": 72,
+            "excelScore": 66
+          },
+          {
+            "id": "OCTG-0019",
+            "grade": "27-31-4 / N08028 / 110",
+            "htmlScore": 72,
+            "excelScore": 66
+          },
+          {
+            "id": "OCTG-0020",
+            "grade": "27-31-4 / N08028 / 125",
+            "htmlScore": 72,
+            "excelScore": 66
+          },
+          {
+            "id": "OCTG-0021",
+            "grade": "L80 3Cr",
+            "htmlScore": 10,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0022",
+            "grade": "13-1-0 / 110 (PSL1)",
+            "htmlScore": 18,
+            "excelScore": 24
+          }
+        ]
+      },
+      "hpht": {
+        "inputs": {
+          "yield": 110,
+          "h2s": 2,
+          "co2": 30,
+          "cl": 80000,
+          "temp": 180,
+          "sulfur": true,
+          "collapse": true
+        },
+        "scoreDifferenceCount": 219,
+        "examples": [
+          {
+            "id": "OCTG-0002",
+            "grade": "C90",
+            "htmlScore": 8,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0006",
+            "grade": "L80 Type 1",
+            "htmlScore": 8,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0012",
+            "grade": "T95",
+            "htmlScore": 8,
+            "excelScore": 0
+          },
+          {
+            "id": "OCTG-0013",
+            "grade": "22-5-3 / S31803 / 110",
+            "htmlScore": 55,
+            "excelScore": 49
+          },
+          {
+            "id": "OCTG-0014",
+            "grade": "22-5-3 / S31803 / 125",
+            "htmlScore": 55,
+            "excelScore": 49
+          },
+          {
+            "id": "OCTG-0015",
+            "grade": "22-5-3 / S31803 / 65",
+            "htmlScore": 41,
+            "excelScore": 15
+          },
+          {
+            "id": "OCTG-0016",
+            "grade": "22-35-4 / N08135 / 110",
+            "htmlScore": 55,
+            "excelScore": 49
+          },
+          {
+            "id": "OCTG-0017",
+            "grade": "25-32-3 / N08535 / 110",
+            "htmlScore": 55,
+            "excelScore": 49
+          },
+          {
+            "id": "OCTG-0018",
+            "grade": "25-32-3 / N08535 / 125",
+            "htmlScore": 55,
+            "excelScore": 49
+          },
+          {
+            "id": "OCTG-0019",
+            "grade": "27-31-4 / N08028 / 110",
+            "htmlScore": 55,
+            "excelScore": 49
+          },
+          {
+            "id": "OCTG-0020",
+            "grade": "27-31-4 / N08028 / 125",
+            "htmlScore": 55,
+            "excelScore": 49
+          },
+          {
+            "id": "OCTG-0022",
+            "grade": "13-1-0 / 110 (PSL1)",
+            "htmlScore": 0,
+            "excelScore": 7
+          }
+        ]
+      }
+    }
+  },
+  "supportingSheets": {
+    "PRICE BENCHMARKS": [
+      [
+        "Market/Basis",
+        "Observation",
+        "Grade",
+        "Product",
+        "Low price",
+        "High price",
+        "Price units",
+        "Important qualifications",
+        "Source URL"
+      ],
+      [
+        "China FOB indicative",
+        "2026",
+        "J55",
+        "Generic API 5CT",
+        "650",
+        "800",
+        "USD/metric ton",
+        "General FOB China benchmark, not supplier quote",
+        "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      ],
+      [
+        "China FOB indicative",
+        "2026",
+        "K55",
+        "Generic API 5CT",
+        "680",
+        "830",
+        "USD/metric ton",
+        "General FOB China benchmark, not supplier quote",
+        "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      ],
+      [
+        "China FOB indicative",
+        "2026",
+        "N80",
+        "Generic API 5CT",
+        "750",
+        "920",
+        "USD/metric ton",
+        "General FOB China benchmark, not supplier quote",
+        "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      ],
+      [
+        "China FOB indicative",
+        "2026",
+        "L80",
+        "Generic API 5CT",
+        "850",
+        "1050",
+        "USD/metric ton",
+        "Carbon low-alloy L80; 9Cr and 13Cr are different",
+        "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      ],
+      [
+        "China FOB indicative",
+        "2026",
+        "P110",
+        "Generic API 5CT",
+        "950",
+        "1200",
+        "USD/metric ton",
+        "General FOB China benchmark, not supplier quote",
+        "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      ],
+      [
+        "Tube/Pipe association",
+        "2026 Q1",
+        "P110 casing 5.5in",
+        "Representative market",
+        "1800",
+        "1800",
+        "USD/metric ton",
+        "Approx. price for selected published market benchmark; different region and basis from China FOB",
+        "https://www.itatube.org/market_overview_0426.php"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "J55 tubing 2-3/8in",
+        "2-3/8in tubing",
+        "3.3",
+        "4.2",
+        "USD/foot",
+        "Requires actual lb/ft to convert into USD/t; no conversion implied",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "J55 tubing 2-7/8in",
+        "2-7/8in tubing",
+        "4.5",
+        "5.6",
+        "USD/foot",
+        "Different pipe size; not comparable to bare material unit cost",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "L80 tubing 2-7/8in",
+        "2-7/8in tubing",
+        "5.8",
+        "7.2",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "L80 tubing 3-1/2in",
+        "3-1/2in tubing",
+        "7.2",
+        "8.8",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "J55 casing 4-1/2in",
+        "4-1/2in casing",
+        "8.5",
+        "10.5",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "L80 casing 4-1/2in",
+        "4-1/2in casing",
+        "10.5",
+        "12.8",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "J55 casing 5-1/2in",
+        "5-1/2in casing",
+        "10.5",
+        "12.8",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "L80 casing 5-1/2in",
+        "5-1/2in casing",
+        "12.8",
+        "15.5",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "P110 casing 5-1/2in",
+        "5-1/2in casing",
+        "15.5",
+        "18.5",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "J55 casing 7in",
+        "7in casing",
+        "18",
+        "22",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ],
+      [
+        "US distributor spot",
+        "July 2026",
+        "P110 casing 7in",
+        "7in casing",
+        "24",
+        "29",
+        "USD/foot",
+        "Distributor spot, not producer mill quotation",
+        "https://njoilfieldservices.blogspot.com/2026/07/"
+      ]
+    ],
+    "SOURCES": [
+      [
+        "Reference",
+        "Full URL",
+        "Evidence type",
+        "Access date"
+      ],
+      [
+        "API 5CT standard change and 3Cr",
+        "https://www.api.org/products-and-services/standards/important-standards-announcements/spec5ct-tradepress",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "API 5CRA licensing information 2023",
+        "https://www.api.org/-/media/Files/Certification/Monogram-APIQR/0_API-Monogram-APIQR/LIFs/API_5CRA_Licensing_Information_Form_20230821.pdf",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "API latest update / 5CRA 3rd ed 2025",
+        "https://www.api.org/products-and-services/api-monogram-and-apiqr/latest-updates",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "ISO 13680:2024 CRA scope",
+        "https://committee.iso.org/standard/87722.html",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Tenaris steel grades table",
+        "https://www.tenaris.com/en/products-and-services/octg/steel-grades/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Vallourec sour service",
+        "https://solutions.vallourec.com/product/sour-service/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Vallourec collapse",
+        "https://solutions.vallourec.com/product/high-collapse/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Vallourec 13Cr/S13Cr",
+        "https://solutions.vallourec.com/product/13cr-and-super-13cr/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Vallourec high strength",
+        "https://solutions.vallourec.com/product/high-strength/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Nippon Steel sour",
+        "https://www.tubular.nipponsteel.com/octg-material/application-list/sour-service",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Nippon Steel sour + collapse",
+        "https://www.tubular.nipponsteel.com/octg-material/application-list/high-collapse-sour-service",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Nippon Steel high strength",
+        "https://www.tubular.nipponsteel.com/octg-material/application-list/high-collapse-high-strength",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Nippon Steel Cr grades",
+        "https://www.tubular.nipponsteel.com/octg-material/application-list/martensitic-stainless-steel",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Nippon Steel duplex",
+        "https://www.tubular.nipponsteel.com/octg-material/application-list/duplex-stainless-steel",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Nippon Steel nickel grades",
+        "https://www.tubular.nipponsteel.com/octg-material/application-list/nickel-alloy",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "JFE available grade table",
+        "https://www.jfe-steel.co.jp/en/products/energy/octg/material/grade_table.html",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "JFE 13Cr",
+        "https://www.jfe-steel.co.jp/en/products/energy/octg/material/13cr_ms.html",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "JFE 15/17Cr",
+        "https://www.jfe-steel.co.jp/en/products/energy/octg/material/uhp_ht.html",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "voestalpine proprietary grades",
+        "https://www.voestalpine.com/tubulars/en/products/Proprietary-Grades/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "voestalpine 2025 5CT update",
+        "https://www.voestalpine.com/tubulars/en/news-events/changes-to-standards-for-proprietary-grades/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "US Steel tubular grades",
+        "https://www.ussteel.com/customers/products/tubular/octg",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Borusan OCTG catalogue",
+        "https://www.borusanmannesmann.com/media/2139/octg2018-web.pdf",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "SeAH OCTG",
+        "https://www.seahsteel.co.kr/eng/application/oil-gas.asp",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "TMK technical catalog",
+        "https://www.tmk-group.com/Product_catalogs/download/iUyDU2WGsXF83Z51hREsAjBWQi97Jkisx7cNQO9Zz9Ws1V0HOX8SPFWWsaCf",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "TMK proprietary grades reference",
+        "https://www.tmk-group.com/media_en/files/292/65/Presentation_CMD1014.pdf",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "TPCO proprietary families",
+        "https://www.tpco.com.cn/system/2017/08/30/014009466.shtml",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Jindal SAW",
+        "https://jindalsaw.com/business-operations/products/pipes-helical-longitudinal-submerged-arc-welding/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Jindal Pipes",
+        "https://www.jindal.com/jpl/casing-tubing-pipe.html",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "ArcelorMittal OCTG",
+        "https://projects.arcelormittal.com/energy/products-services/product-range/pipes-tubulars",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Interpipe OCTG",
+        "https://interpipe.biz/en/oil-gas-production/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Interpipe grade range",
+        "https://interpipe.biz/en/esg/environment/green_supplies/",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "Huajin sour",
+        "https://www.huajinpipe.com/en/col.jsp?id=117",
+        "Supplier official",
+        "2026-10-10"
+      ],
+      [
+        "2026 China FOB benchmark",
+        "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/",
+        "Third-party pricing",
+        "2026-10-10"
+      ],
+      [
+        "2026 Pipe Association market",
+        "https://www.itatube.org/market_overview_0426.php",
+        "Third-party pricing",
+        "2026-10-10"
+      ],
+      [
+        "2026 US distributor spot",
+        "https://njoilfieldservices.blogspot.com/2026/07/",
+        "Third-party pricing",
+        "2026-10-10"
+      ],
+      [
+        "Argus OCTG sample market",
+        "https://www.argusmedia.com/-/media/project/argusmedia/mainsite/english/documents-and-files/sample-reports/argus-pipe-logix-octg-outlook.pdf?rev=-1",
+        "Third-party pricing",
+        "2026-10-10"
+      ]
+    ],
+    "SELECTION METHODOLOGY": [
+      [
+        "SELECTION DECISION LOGIC | ENGINEERING TRANSPARENCY",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Catalog-fit score: a traceable search heuristic (0–100). NOT a predicted corrosion rate, probability of suitability, NACE compliance, or API collapse/burst/axial rating.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "STEP",
+        "CHECK",
+        "IMPLEMENTATION",
+        "WHY IT MATTERS",
+        "DECISION EFFECT",
+        "STANDARD / SOURCE"
+      ],
+      [
+        "01",
+        "Yield strength",
+        "Exclude if published SMYS < input",
+        "Nominal strength does not establish pipe capacity",
+        "EXCLUDE strength",
+        "API 5CT / API 5CRA"
+      ],
+      [
+        "02",
+        "Cost budget",
+        "A–I cost tier screen, optional",
+        "Subjective cost ordering; actual offers differ",
+        "EXCLUDE cost preference",
+        "Master database cost notes"
+      ],
+      [
+        "03",
+        "API reference",
+        "API generic rows flagged, not orderable",
+        "Grade does not identify qualified manufacturer",
+        "Reference-only / exclude reference",
+        "API 5CT/5CRA"
+      ],
+      [
+        "04",
+        "Sour environment",
+        "When wet and pH2S > 0, prioritize explicit supplier sour-service claims",
+        "SSC/HIC/SCC depend on stress, pH, temp, Cl, H2S pressure",
+        "Catalog ranking, no automatic approval",
+        "ISO 15156-1/2/3"
+      ],
+      [
+        "05",
+        "Wet CO2",
+        "Prioritize low-Cr/Cr/duplex/Ni materials, otherwise require corrosion control",
+        "Uniform corrosion and localized corrosion matter",
+        "Catalog ranking only",
+        "CO2 corrosion model / operator standard"
+      ],
+      [
+        "06",
+        "High collapse",
+        "Prioritize only supplier-listed collapse grades",
+        "Mechanical collapse needs OD/wall and axial load",
+        "Catalog ranking; request collapse curve",
+        "ISO/TR 10400"
+      ],
+      [
+        "07",
+        "Chloride",
+        "Always require localized-corrosion envelope in aqueous service",
+        "Pitting/crevice and SCC limits vary greatly by alloy/T",
+        "Review note, not numeric pass/fail",
+        "Supplier datasheets / field data"
+      ],
+      [
+        "08",
+        "Temperature",
+        "High T >=120 C flagged as caution (not allowable)",
+        "Cracking resistance, phase stability and high-T ratings",
+        "Review note, not alloy disqualification",
+        "ISO 15156 / material datasheet"
+      ],
+      [
+        "09",
+        "Acidity",
+        "pH <5 flagged as caution (not allowable)",
+        "Acidic water worsens many corrosion/SSC environments",
+        "Review note, not alloy disqualification",
+        "ISO 15156 / lab and model"
+      ],
+      [
+        "10",
+        "Elemental sulfur",
+        "Presence blocks automatic candidate status",
+        "Sulfur raises localized corrosion / cracking concerns",
+        "Review every material, no auto approval",
+        "Project sulphur qualification"
+      ],
+      [
+        "11",
+        "Environment unknown",
+        "Unknown free water -> review only",
+        "SSC/CO2 corrosion often need aqueous phase",
+        "REVIEW, until verified",
+        "Design inputs / well fluid history"
+      ],
+      [
+        "12",
+        "Final qualification",
+        "Check vendor-specific supply, SSC/SCC, CO2, cl, temperature, PSL and mechanicals",
+        "Avoid incorrect grade approval from supplier marketing",
+        "Engineering dossier required",
+        "API 5CT, 5CRA, ISO15156, ISO/TR10400"
+      ],
+      [
+        "PRIMARY STANDARD REFERENCES",
+        "URL",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "API latest amendments",
+        "https://www.api.org/products-and-services/api-monogram-and-apiqr/latest-updates"
+      ],
+      [
+        "API editions & publication dates",
+        "https://www.api.org/products-and-services/standards/standards-plan"
+      ],
+      [
+        "ISO 15156-1:2020",
+        "https://www.iso.org/standard/79658.html"
+      ],
+      [
+        "AMPP / NACE MR0175",
+        "https://content.ampp.org/standards/book/1139/ANSI-NACE-MR0175-Petroleum-and-Natural-Gas"
+      ],
+      [
+        "ISO/TR 10400:2018",
+        "https://www.iso.org/standard/75259.html"
+      ],
+      [
+        "API 5CRA current edition (2025)",
+        "https://store.accuristech.com/standards/api-spec-5cra?product_id=2933341"
+      ]
+    ],
+    "WELL INPUTS": [
+      [
+        "OCTG   /   WELL MATERIAL SELECTION CONSOLE",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Change the blue inputs. SCREENING results and KPI counts update automatically in Excel. This is a pre-screen, not a service-qualification certificate.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "DESIGN INPUT",
+        "VALUE / USER EDIT",
+        "WHAT IT MEANS",
+        "",
+        "ENGINEERING GATES",
+        "STATUS",
+        "PURPOSE"
+      ],
+      [
+        "Water / aqueous phase",
+        "Wet",
+        "Wet, Verified dry, or Unknown",
+        "",
+        "H2S / cracking",
+        "=IF(B5>0,\"VERIFY ISO 15156\",\"CHECK DESIGN\")",
+        "Supplier-qualified environment"
+      ],
+      [
+        "H2S partial pressure (bar)",
+        "0",
+        "0 does NOT establish NACE sweet-service qualification",
+        "",
+        "Wet CO2",
+        "=IF(AND(B4=\"Wet\",B6>0),\"CORROSION MODEL\",\"NOT FLAGGED\")",
+        "Corrosion rate + inhibition"
+      ],
+      [
+        "CO2 partial pressure (bar)",
+        "5",
+        "Partial pressure in bar; not mole %",
+        "",
+        "High collapse",
+        "=IF(B12=\"Yes\",\"RATING REQUIRED\",\"NORMAL DESIGN\")",
+        "Pipe OD/WT + loads"
+      ],
+      [
+        "Max design temperature (°C)",
+        "85",
+        "Confirm vendor temperature envelope",
+        "",
+        "Elemental sulfur",
+        "=IF(B10=\"Yes\",\"SPECIAL REVIEW\",IF(B10=\"Unknown\",\"DATA NEEDED\",\"NOT REPORTED\"))",
+        "Cracking / corrosion risks"
+      ],
+      [
+        "Produced-water chlorides (mg/L)",
+        "15000",
+        "Used as mandatory review cue, not an acceptance limit",
+        "",
+        "Chloride / temperature",
+        "=IF(AND(B4=\"Wet\",OR(B8>0,B7>0)),\"LIMITS REQUIRED\",\"CHECK EXPOSURE\")",
+        "Check pitting, SCC envelope"
+      ],
+      [
+        "Produced-water pH",
+        "5.5",
+        "Measured/estimated operating pH",
+        "",
+        "Overall",
+        "=IF(OR(B5>0,B10=\"Yes\",B4=\"Unknown\"),\"ENVIRONMENT REVIEW\",\"VERIFY STANDARD LIMITS\")",
+        "NEVER automatic acceptance"
+      ],
+      [
+        "Elemental sulfur",
+        "No",
+        "Yes means special corrosion / cracking evaluation"
+      ],
+      [
+        "Required minimum SMYS (ksi)",
+        "80",
+        "Only preliminary yield check; not load rating",
+        "",
+        "SUPPLEMENTAL CHECK",
+        "STATUS",
+        "RATIONALE"
+      ],
+      [
+        "High-collapse grade required?",
+        "No",
+        "Verify proprietary rating using OD/wall/load",
+        "",
+        "Acidic water",
+        "=IF(B9<5,\"ACIDIC REVIEW\",\"VERIFY pH ENVELOPE\")",
+        "pH is not an independent material acceptance criterion"
+      ],
+      [
+        "Maximum relative alloy cost tier",
+        "Unrestricted",
+        "Alphabetic A to I = purchasing preference",
+        "",
+        "Temperature",
+        "=IF(B7>=120,\"HIGH-T RECHECK\",\"QUALIFY TEMPERATURE\")",
+        "120 °C used as caution, not a pass/fail limit"
+      ],
+      [
+        "Include API generic reference grades?",
+        "No",
+        "API rows remain REFERENCE ONLY in screening",
+        "",
+        "Chloride",
+        "=IF(AND(B4=\"Wet\",B8>0),\"PITTING/SCC REVIEW\",\"CHECK BRINE\")",
+        "Manufacturer test envelope / localized corrosion"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "Fluid phase",
+        "=IF(B4=\"Unknown\",\"UNKNOWN EXPOSURE\",\"CONFIRM UPSETS\")",
+        "Water condensation during start/stop and life cycle"
+      ],
+      [
+        "SOURCE-BACKED SCREENING KPIs",
+        "COUNT",
+        "INTERPRETATION"
+      ],
+      [
+        "Catalog candidates",
+        "=COUNTIF(SCREENING!R2:R451,\"CANDIDATE — VERIFY\")",
+        "Still require supplier/environment qualification"
+      ],
+      [
+        "Needs focused review",
+        "=COUNTIF(SCREENING!R2:R451,\"REVIEW\")",
+        "Not excluded; catalog claims/parameters inadequate"
+      ],
+      [
+        "Below strength requirement",
+        "=COUNTIF(SCREENING!R2:R451,\"EXCLUDE — STRENGTH\")",
+        "SMYS alone; actual load cases separate"
+      ],
+      [
+        "Exceeds cost tier",
+        "=COUNTIF(SCREENING!R2:R451,\"EXCLUDE — COST\")",
+        "Procurement tier preference only"
+      ],
+      [
+        "API generic references",
+        "=COUNTIF(SCREENING!R2:R451,\"REFERENCE ONLY\")+COUNTIF(SCREENING!R2:R451,\"EXCLUDE — REFERENCE\")",
+        "Not specific supplier stock grades"
+      ],
+      [
+        "SCREENING METHOD: Strength and optional cost cap are exclusion gates; all chemistry, SSC, pitting, high collapse, and connection acceptance need documented review.",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "EXAMPLE ONLY — SCENARIOS",
+        "pH2S bar",
+        "pCO2 bar"
+      ],
+      [
+        "Sweet conventional",
+        "0",
+        "0.1"
+      ],
+      [
+        "Wet CO2",
+        "0",
+        "5"
+      ],
+      [
+        "Sour, collapse",
+        "0.1",
+        "7"
+      ],
+      [
+        "HPHT sour",
+        "2",
+        "30"
+      ]
+    ],
+    "COST ESTIMATOR": [
+      [
+        "COST ESTIMATOR | size-specific OCTG string",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Enter a real supplier price, weight, length and quantity. Calculator excludes taxes and other undisclosed charges.",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Grade / supplier label",
+        "Example: P110 - supplier RFQ",
+        "",
+        "PRICE COMPARISON RULE",
+        "",
+        ""
+      ],
+      [
+        "Nominal weight (lb/ft)",
+        "23",
+        "",
+        "Weight (lb/ft) depends on OD and wall.",
+        "",
+        ""
+      ],
+      [
+        "Length per joint (m)",
+        "12.2",
+        "",
+        "USD/t cannot directly equal USD/ft.",
+        "",
+        ""
+      ],
+      [
+        "Number of joints",
+        "100"
+      ],
+      [
+        "Quoted pipe price (USD/t)",
+        "1800"
+      ],
+      [
+        "Threading / testing %",
+        "12"
+      ],
+      [
+        "Freight / delivery (USD/t)",
+        "200"
+      ],
+      [
+        "Total installed length (m)",
+        "=B7*B8"
+      ],
+      [
+        "Total nominal pipe mass (t)",
+        "=B6*3.280839895*B7*B8*0.45359237/1000"
+      ],
+      [
+        "Pipe material cost (USD)",
+        "=B15*B9"
+      ],
+      [
+        "Thread / testing allowance (USD)",
+        "=B16*B10/100"
+      ],
+      [
+        "Freight allowance (USD)",
+        "=B15*B11"
+      ],
+      [
+        "Indicative total (USD)",
+        "=SUM(B16:B18)"
+      ],
+      [
+        "Indicative cost (USD/m)",
+        "=IF(B14>0,B19/B14,0)"
+      ],
+      [
+        "Replace illustration values with actual comparable quotes: same OD, wall, grade, connection, test class and delivery basis.",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "READ ME": [
+      [
+        "GLOBAL OCTG | USER GUIDE & TECHNICAL CAVEATS",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "TOPIC",
+        "DATASET NOTES"
+      ],
+      [
+        "Dataset version",
+        "10 October 2026. Source-backed snapshot of public supplier catalogues; product availability changes."
+      ],
+      [
+        "What is included",
+        "450 individual supplier/grade records: 15 manufacturers plus API 5CT and API 5CRA reference records."
+      ],
+      [
+        "Use the database",
+        "Open MASTER GRADES. Use Excel table-column dropdowns to filter by supplier, grade, family, corrosion/sour service, SMYS, API group, cost tier, or source."
+      ],
+      [
+        "API 5CT reference",
+        "API 5CT generic grades separate from proprietary designations. M65 is withdrawn; L80-3Cr introduced in newer edition. Check applicable contract edition and errata."
+      ],
+      [
+        "API 5CRA reference",
+        "API 5CRA PSL/category/UNS mapping based on the API's August 2023 licensing matrix. API 5CRA 3rd edition was released in 2025: reconfirm grade/category and current requirements before specifying."
+      ],
+      [
+        "API 5CRA Group 5",
+        "Some group 5 age-hardened nickel products are bar-only and NOT casing/tubing; excluded as OCTG grades."
+      ],
+      [
+        "Grade interpretation",
+        "Names on supplier websites may signify a grade, family, minimum yield, or proprietary trademark. Rows report public grade designations and distinguish general family membership."
+      ],
+      [
+        "Grade / NACE acceptance",
+        "Sour-service marketing does not mean automatic acceptance under NACE MR0175 / ISO 15156. Verify H2S partial pressure, pH, chloride, temperature, elemental sulfur, stress and environmental limits."
+      ],
+      [
+        "High collapse",
+        "Only treat explicit high-collapse grades as such; a minimum yield strength alone is insufficient for collapse-rating acceptance."
+      ],
+      [
+        "Pricing evidence",
+        "Actual mill OCTG grade-specific prices depend on size, connection, delivery quantity, origin, logistics, and commercial terms; proprietary items therefore show RFQ."
+      ],
+      [
+        "Price tiers",
+        "A through I is a qualitative procurement-screening ranking, NOT a quantified material-price ratio or substitute for a supplier quote."
+      ],
+      [
+        "Public benchmarks",
+        "PRICE BENCHMARKS contains separately sourced market examples in USD/t and USD/ft; do not conflate geography, year, grade, delivery basis or units."
+      ],
+      [
+        "Cost estimator",
+        "Enter nominal weight per foot, joint length, number of joints, USD/t quoted price and other allowances to estimate string cost."
+      ],
+      [
+        "Sources",
+        "Every master record has a traceable URL and evidence status. SOURCES provides key primary catalogues and standards."
+      ],
+      [
+        "Important limitation",
+        "A global proprietary grade portfolio cannot be permanently exhaustive; some supplier catalogues are downloadable PDFs, localized, historical, or sold only by special order."
+      ],
+      [
+        "Verification before use",
+        "Check current datasheet, strength/toughness, SSC/SCC/CO2/Cl limits, PSL, manufacturing process, connection, dimensions and applicable service environment."
+      ],
+      [
+        "Excel compatibility",
+        "Native Excel tables support interactive filter/sort in Microsoft Excel; formulas use standard spreadsheet syntax."
+      ]
+    ]
+  },
+  "auxiliaryEvidence": {
+    "sourceReferenceCount": 36,
+    "masterRecordUniqueURLCount": 27,
+    "auxiliaryOnlySources": [
+      {
+        "reference": "API latest update / 5CRA 3rd ed 2025",
+        "url": "https://www.api.org/products-and-services/api-monogram-and-apiqr/latest-updates"
+      },
+      {
+        "reference": "ISO 13680:2024 CRA scope",
+        "url": "https://committee.iso.org/standard/87722.html"
+      },
+      {
+        "reference": "voestalpine 2025 5CT update",
+        "url": "https://www.voestalpine.com/tubulars/en/news-events/changes-to-standards-for-proprietary-grades/"
+      },
+      {
+        "reference": "TMK technical catalog",
+        "url": "https://www.tmk-group.com/Product_catalogs/download/iUyDU2WGsXF83Z51hREsAjBWQi97Jkisx7cNQO9Zz9Ws1V0HOX8SPFWWsaCf"
+      },
+      {
+        "reference": "Interpipe OCTG",
+        "url": "https://interpipe.biz/en/oil-gas-production/"
+      },
+      {
+        "reference": "2026 China FOB benchmark",
+        "url": "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      },
+      {
+        "reference": "2026 Pipe Association market",
+        "url": "https://www.itatube.org/market_overview_0426.php"
+      },
+      {
+        "reference": "2026 US distributor spot",
+        "url": "https://njoilfieldservices.blogspot.com/2026/07/"
+      },
+      {
+        "reference": "Argus OCTG sample market",
+        "url": "https://www.argusmedia.com/-/media/project/argusmedia/mainsite/english/documents-and-files/sample-reports/argus-pipe-logix-octg-outlook.pdf?rev=-1"
+      }
+    ],
+    "benchmarkObservationCount": 17,
+    "recordLinkedRangeCount": 6,
+    "distinctRecordLinkedBenchmarkGradeCount": 5,
+    "recordLinkedRangeNote": "Six API baseline rows share five generic China FOB observations: N80 Type 1 and N80 Type Q share the N80 range. Other workbook benchmarks remain auxiliary observations in their original units/basis.",
+    "legacyEstimatorInputsAreIllustrative": true
+  }
+}

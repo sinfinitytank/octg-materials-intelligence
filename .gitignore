@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.DS_Store
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.env*
+!.env.example
+/.cache/
+/OCTG_API5CT_5CRA_Global_Grade_Master_2026.xlsx
+/OCTG_Well_Material_Selection_Excel_Dashboard.xlsx
+/OCTG_Well_Material_Selector_Interactive.html
+/octg_master_grades.csv

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-10",
+  "expectedRecords": 450,
+  "sha256": {
+    "OCTG_API5CT_5CRA_Global_Grade_Master_2026.xlsx": "323732bdf8522f49da694f5acc52faee1510142f6fd41956a38991fc1ce73239",
+    "OCTG_Well_Material_Selection_Excel_Dashboard.xlsx": "1a5f111775f5ae1040e6b0cde9161283f7c92b3e2466ea2a4180451c37408d8b",
+    "OCTG_Well_Material_Selector_Interactive.html": "d90aaae9961d877b016289485acbb40225173a73b2716da8e2a3fd20d2f90d53",
+    "octg_master_grades.csv": "e589a46d8391dfdb0a93c80e730cfc98b64244d9e3b4e12a60133aed76ef9812"
+  }
+}

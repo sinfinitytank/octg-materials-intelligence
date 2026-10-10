@@ -1,0 +1,10 @@
+node_modules/
+dist/
+/data/
+/public/data/
+test-results/
+playwright-report/
+package-lock.json
+*.xlsx
+*.csv
+OCTG_Well_Material_Selector_Interactive.html

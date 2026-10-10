@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-10-10.1",
+  "sourceWorkbook": "data/source/OCTG_Well_Material_Selection_Excel_Dashboard.xlsx",
+  "sourceSha256": "1a5f111775f5ae1040e6b0cde9161283f7c92b3e2466ea2a4180451c37408d8b",
+  "verification": "unverified",
+  "sources": [
+    {
+      "sourceRow": 2,
+      "raw": {
+        "Reference": "API 5CT standard change and 3Cr",
+        "Full URL": "https://www.api.org/products-and-services/standards/important-standards-announcements/spec5ct-tradepress",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 3,
+      "raw": {
+        "Reference": "API 5CRA licensing information 2023",
+        "Full URL": "https://www.api.org/-/media/Files/Certification/Monogram-APIQR/0_API-Monogram-APIQR/LIFs/API_5CRA_Licensing_Information_Form_20230821.pdf",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 4,
+      "raw": {
+        "Reference": "API latest update / 5CRA 3rd ed 2025",
+        "Full URL": "https://www.api.org/products-and-services/api-monogram-and-apiqr/latest-updates",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 5,
+      "raw": {
+        "Reference": "ISO 13680:2024 CRA scope",
+        "Full URL": "https://committee.iso.org/standard/87722.html",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 6,
+      "raw": {
+        "Reference": "Tenaris steel grades table",
+        "Full URL": "https://www.tenaris.com/en/products-and-services/octg/steel-grades/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 7,
+      "raw": {
+        "Reference": "Vallourec sour service",
+        "Full URL": "https://solutions.vallourec.com/product/sour-service/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 8,
+      "raw": {
+        "Reference": "Vallourec collapse",
+        "Full URL": "https://solutions.vallourec.com/product/high-collapse/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 9,
+      "raw": {
+        "Reference": "Vallourec 13Cr/S13Cr",
+        "Full URL": "https://solutions.vallourec.com/product/13cr-and-super-13cr/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 10,
+      "raw": {
+        "Reference": "Vallourec high strength",
+        "Full URL": "https://solutions.vallourec.com/product/high-strength/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 11,
+      "raw": {
+        "Reference": "Nippon Steel sour",
+        "Full URL": "https://www.tubular.nipponsteel.com/octg-material/application-list/sour-service",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 12,
+      "raw": {
+        "Reference": "Nippon Steel sour + collapse",
+        "Full URL": "https://www.tubular.nipponsteel.com/octg-material/application-list/high-collapse-sour-service",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 13,
+      "raw": {
+        "Reference": "Nippon Steel high strength",
+        "Full URL": "https://www.tubular.nipponsteel.com/octg-material/application-list/high-collapse-high-strength",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 14,
+      "raw": {
+        "Reference": "Nippon Steel Cr grades",
+        "Full URL": "https://www.tubular.nipponsteel.com/octg-material/application-list/martensitic-stainless-steel",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 15,
+      "raw": {
+        "Reference": "Nippon Steel duplex",
+        "Full URL": "https://www.tubular.nipponsteel.com/octg-material/application-list/duplex-stainless-steel",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 16,
+      "raw": {
+        "Reference": "Nippon Steel nickel grades",
+        "Full URL": "https://www.tubular.nipponsteel.com/octg-material/application-list/nickel-alloy",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 17,
+      "raw": {
+        "Reference": "JFE available grade table",
+        "Full URL": "https://www.jfe-steel.co.jp/en/products/energy/octg/material/grade_table.html",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 18,
+      "raw": {
+        "Reference": "JFE 13Cr",
+        "Full URL": "https://www.jfe-steel.co.jp/en/products/energy/octg/material/13cr_ms.html",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 19,
+      "raw": {
+        "Reference": "JFE 15/17Cr",
+        "Full URL": "https://www.jfe-steel.co.jp/en/products/energy/octg/material/uhp_ht.html",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 20,
+      "raw": {
+        "Reference": "voestalpine proprietary grades",
+        "Full URL": "https://www.voestalpine.com/tubulars/en/products/Proprietary-Grades/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 21,
+      "raw": {
+        "Reference": "voestalpine 2025 5CT update",
+        "Full URL": "https://www.voestalpine.com/tubulars/en/news-events/changes-to-standards-for-proprietary-grades/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 22,
+      "raw": {
+        "Reference": "US Steel tubular grades",
+        "Full URL": "https://www.ussteel.com/customers/products/tubular/octg",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 23,
+      "raw": {
+        "Reference": "Borusan OCTG catalogue",
+        "Full URL": "https://www.borusanmannesmann.com/media/2139/octg2018-web.pdf",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 24,
+      "raw": {
+        "Reference": "SeAH OCTG",
+        "Full URL": "https://www.seahsteel.co.kr/eng/application/oil-gas.asp",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 25,
+      "raw": {
+        "Reference": "TMK technical catalog",
+        "Full URL": "https://www.tmk-group.com/Product_catalogs/download/iUyDU2WGsXF83Z51hREsAjBWQi97Jkisx7cNQO9Zz9Ws1V0HOX8SPFWWsaCf",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 26,
+      "raw": {
+        "Reference": "TMK proprietary grades reference",
+        "Full URL": "https://www.tmk-group.com/media_en/files/292/65/Presentation_CMD1014.pdf",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 27,
+      "raw": {
+        "Reference": "TPCO proprietary families",
+        "Full URL": "https://www.tpco.com.cn/system/2017/08/30/014009466.shtml",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 28,
+      "raw": {
+        "Reference": "Jindal SAW",
+        "Full URL": "https://jindalsaw.com/business-operations/products/pipes-helical-longitudinal-submerged-arc-welding/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 29,
+      "raw": {
+        "Reference": "Jindal Pipes",
+        "Full URL": "https://www.jindal.com/jpl/casing-tubing-pipe.html",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 30,
+      "raw": {
+        "Reference": "ArcelorMittal OCTG",
+        "Full URL": "https://projects.arcelormittal.com/energy/products-services/product-range/pipes-tubulars",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 31,
+      "raw": {
+        "Reference": "Interpipe OCTG",
+        "Full URL": "https://interpipe.biz/en/oil-gas-production/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 32,
+      "raw": {
+        "Reference": "Interpipe grade range",
+        "Full URL": "https://interpipe.biz/en/esg/environment/green_supplies/",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 33,
+      "raw": {
+        "Reference": "Huajin sour",
+        "Full URL": "https://www.huajinpipe.com/en/col.jsp?id=117",
+        "Evidence type": "Supplier official",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 34,
+      "raw": {
+        "Reference": "2026 China FOB benchmark",
+        "Full URL": "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/",
+        "Evidence type": "Third-party pricing",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 35,
+      "raw": {
+        "Reference": "2026 Pipe Association market",
+        "Full URL": "https://www.itatube.org/market_overview_0426.php",
+        "Evidence type": "Third-party pricing",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 36,
+      "raw": {
+        "Reference": "2026 US distributor spot",
+        "Full URL": "https://njoilfieldservices.blogspot.com/2026/07/",
+        "Evidence type": "Third-party pricing",
+        "Access date": "2026-10-10"
+      }
+    },
+    {
+      "sourceRow": 37,
+      "raw": {
+        "Reference": "Argus OCTG sample market",
+        "Full URL": "https://www.argusmedia.com/-/media/project/argusmedia/mainsite/english/documents-and-files/sample-reports/argus-pipe-logix-octg-outlook.pdf?rev=-1",
+        "Evidence type": "Third-party pricing",
+        "Access date": "2026-10-10"
+      }
+    }
+  ],
+  "benchmarks": [
+    {
+      "sourceRow": 2,
+      "raw": {
+        "Market/Basis": "China FOB indicative",
+        "Observation": "2026",
+        "Grade": "J55",
+        "Product": "Generic API 5CT",
+        "Low price": "650",
+        "High price": "800",
+        "Price units": "USD/metric ton",
+        "Important qualifications": "General FOB China benchmark, not supplier quote",
+        "Source URL": "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      }
+    },
+    {
+      "sourceRow": 3,
+      "raw": {
+        "Market/Basis": "China FOB indicative",
+        "Observation": "2026",
+        "Grade": "K55",
+        "Product": "Generic API 5CT",
+        "Low price": "680",
+        "High price": "830",
+        "Price units": "USD/metric ton",
+        "Important qualifications": "General FOB China benchmark, not supplier quote",
+        "Source URL": "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      }
+    },
+    {
+      "sourceRow": 4,
+      "raw": {
+        "Market/Basis": "China FOB indicative",
+        "Observation": "2026",
+        "Grade": "N80",
+        "Product": "Generic API 5CT",
+        "Low price": "750",
+        "High price": "920",
+        "Price units": "USD/metric ton",
+        "Important qualifications": "General FOB China benchmark, not supplier quote",
+        "Source URL": "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      }
+    },
+    {
+      "sourceRow": 5,
+      "raw": {
+        "Market/Basis": "China FOB indicative",
+        "Observation": "2026",
+        "Grade": "L80",
+        "Product": "Generic API 5CT",
+        "Low price": "850",
+        "High price": "1050",
+        "Price units": "USD/metric ton",
+        "Important qualifications": "Carbon low-alloy L80; 9Cr and 13Cr are different",
+        "Source URL": "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      }
+    },
+    {
+      "sourceRow": 6,
+      "raw": {
+        "Market/Basis": "China FOB indicative",
+        "Observation": "2026",
+        "Grade": "P110",
+        "Product": "Generic API 5CT",
+        "Low price": "950",
+        "High price": "1200",
+        "Price units": "USD/metric ton",
+        "Important qualifications": "General FOB China benchmark, not supplier quote",
+        "Source URL": "https://xbangsupply.com/en/articles/seamless-steel-pipe-price-per-ton-2026/"
+      }
+    },
+    {
+      "sourceRow": 7,
+      "raw": {
+        "Market/Basis": "Tube/Pipe association",
+        "Observation": "2026 Q1",
+        "Grade": "P110 casing 5.5in",
+        "Product": "Representative market",
+        "Low price": "1800",
+        "High price": "1800",
+        "Price units": "USD/metric ton",
+        "Important qualifications": "Approx. price for selected published market benchmark; different region and basis from China FOB",
+        "Source URL": "https://www.itatube.org/market_overview_0426.php"
+      }
+    },
+    {
+      "sourceRow": 8,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "J55 tubing 2-3/8in",
+        "Product": "2-3/8in tubing",
+        "Low price": "3.3",
+        "High price": "4.2",
+        "Price units": "USD/foot",
+        "Important qualifications": "Requires actual lb/ft to convert into USD/t; no conversion implied",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 9,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "J55 tubing 2-7/8in",
+        "Product": "2-7/8in tubing",
+        "Low price": "4.5",
+        "High price": "5.6",
+        "Price units": "USD/foot",
+        "Important qualifications": "Different pipe size; not comparable to bare material unit cost",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 10,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "L80 tubing 2-7/8in",
+        "Product": "2-7/8in tubing",
+        "Low price": "5.8",
+        "High price": "7.2",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 11,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "L80 tubing 3-1/2in",
+        "Product": "3-1/2in tubing",
+        "Low price": "7.2",
+        "High price": "8.8",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 12,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "J55 casing 4-1/2in",
+        "Product": "4-1/2in casing",
+        "Low price": "8.5",
+        "High price": "10.5",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 13,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "L80 casing 4-1/2in",
+        "Product": "4-1/2in casing",
+        "Low price": "10.5",
+        "High price": "12.8",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 14,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "J55 casing 5-1/2in",
+        "Product": "5-1/2in casing",
+        "Low price": "10.5",
+        "High price": "12.8",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 15,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "L80 casing 5-1/2in",
+        "Product": "5-1/2in casing",
+        "Low price": "12.8",
+        "High price": "15.5",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 16,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "P110 casing 5-1/2in",
+        "Product": "5-1/2in casing",
+        "Low price": "15.5",
+        "High price": "18.5",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 17,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "J55 casing 7in",
+        "Product": "7in casing",
+        "Low price": "18",
+        "High price": "22",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    },
+    {
+      "sourceRow": 18,
+      "raw": {
+        "Market/Basis": "US distributor spot",
+        "Observation": "July 2026",
+        "Grade": "P110 casing 7in",
+        "Product": "7in casing",
+        "Low price": "24",
+        "High price": "29",
+        "Price units": "USD/foot",
+        "Important qualifications": "Distributor spot, not producer mill quotation",
+        "Source URL": "https://njoilfieldservices.blogspot.com/2026/07/"
+      }
+    }
+  ]
+}

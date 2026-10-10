@@ -1,0 +1,392 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:octg:materials:1",
+  "title": "OCTG supplied catalog snapshot (schema 1)",
+  "description": "Constrained migration snapshot. Property fields without source evidence remain null; chemistry empty. Future enrichment requires explicit schema and data version changes.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "dataVersion",
+    "sourceSha256",
+    "materials"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "dataVersion": {
+      "type": "string",
+      "const": "2026-10-10.1"
+    },
+    "sourceSha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "materials": {
+      "type": "array",
+      "minItems": 450,
+      "maxItems": 450,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "manufacturer",
+          "region",
+          "grade",
+          "listingType",
+          "specification",
+          "family",
+          "service",
+          "application",
+          "h2s",
+          "co2",
+          "collapseSource",
+          "notes",
+          "uns",
+          "craGroup",
+          "craCategory",
+          "costTier",
+          "collapse",
+          "yieldMinKsi",
+          "yieldMinMPa",
+          "pricing",
+          "source",
+          "properties",
+          "limitations",
+          "raw"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^OCTG-[0-9]{4}$"
+          },
+          "manufacturer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "region": {
+            "type": "string",
+            "minLength": 1
+          },
+          "grade": {
+            "type": "string",
+            "minLength": 1
+          },
+          "listingType": {
+            "type": "string",
+            "minLength": 1
+          },
+          "specification": {
+            "type": "string",
+            "minLength": 1
+          },
+          "family": {
+            "type": "string",
+            "minLength": 1
+          },
+          "service": {
+            "type": "string",
+            "minLength": 1
+          },
+          "application": {
+            "type": "string",
+            "minLength": 1
+          },
+          "h2s": {
+            "type": "string",
+            "minLength": 1
+          },
+          "co2": {
+            "type": "string",
+            "minLength": 1
+          },
+          "collapseSource": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "uns": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "craGroup": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "craCategory": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "costTier": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "collapse": {
+            "type": "string",
+            "enum": [
+              "enhanced",
+              "not-stated"
+            ]
+          },
+          "yieldMinKsi": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "yieldMinMPa": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "pricing": {
+            "type": "object",
+            "required": [
+              "lowUSDPerTonne",
+              "highUSDPerTonne",
+              "vendorUSDPerTonne",
+              "evidence"
+            ],
+            "properties": {
+              "lowUSDPerTonne": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "highUSDPerTonne": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "vendorUSDPerTonne": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "evidence": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "url",
+              "status",
+              "reviewedAt",
+              "verification",
+              "file",
+              "row"
+            ],
+            "properties": {
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "type": "string"
+              },
+              "reviewedAt": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "verification": {
+                "type": "string",
+                "const": "unverified"
+              },
+              "file": {
+                "type": "string",
+                "const": "data/source/octg_master_grades.csv"
+              },
+              "row": {
+                "type": "integer",
+                "minimum": 2
+              }
+            },
+            "additionalProperties": false
+          },
+          "properties": {
+            "type": "object",
+            "required": [
+              "yieldMaxMPa",
+              "tensileMinMPa",
+              "elongationPercent",
+              "hardness",
+              "heatTreatment",
+              "chemistry",
+              "environmentalEnvelope"
+            ],
+            "properties": {
+              "yieldMaxMPa": {
+                "type": "null"
+              },
+              "tensileMinMPa": {
+                "type": "null"
+              },
+              "elongationPercent": {
+                "type": "null"
+              },
+              "hardness": {
+                "type": "null"
+              },
+              "heatTreatment": {
+                "type": "null"
+              },
+              "chemistry": {
+                "type": "object",
+                "maxProperties": 0
+              },
+              "environmentalEnvelope": {
+                "type": "null"
+              }
+            },
+            "additionalProperties": false
+          },
+          "limitations": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "raw": {
+            "type": "object",
+            "required": [
+              "ID",
+              "Supplier",
+              "Region",
+              "Grade",
+              "Listing type",
+              "Standard context",
+              "Material family",
+              "Service / use",
+              "Typical application",
+              "H2S suitability",
+              "CO2 corrosion",
+              "High collapse",
+              "SMYS ksi",
+              "UNS",
+              "5CRA Group",
+              "5CRA Category",
+              "Relative cost tier",
+              "Price low USD/t",
+              "Price high USD/t",
+              "Price evidence",
+              "Vendor quote USD/t",
+              "Source URL",
+              "Source status",
+              "Technical notes",
+              "Reviewed"
+            ],
+            "properties": {
+              "ID": {
+                "type": "string"
+              },
+              "Supplier": {
+                "type": "string"
+              },
+              "Region": {
+                "type": "string"
+              },
+              "Grade": {
+                "type": "string"
+              },
+              "Listing type": {
+                "type": "string"
+              },
+              "Standard context": {
+                "type": "string"
+              },
+              "Material family": {
+                "type": "string"
+              },
+              "Service / use": {
+                "type": "string"
+              },
+              "Typical application": {
+                "type": "string"
+              },
+              "H2S suitability": {
+                "type": "string"
+              },
+              "CO2 corrosion": {
+                "type": "string"
+              },
+              "High collapse": {
+                "type": "string"
+              },
+              "SMYS ksi": {
+                "type": "string"
+              },
+              "UNS": {
+                "type": "string"
+              },
+              "5CRA Group": {
+                "type": "string"
+              },
+              "5CRA Category": {
+                "type": "string"
+              },
+              "Relative cost tier": {
+                "type": "string"
+              },
+              "Price low USD/t": {
+                "type": "string"
+              },
+              "Price high USD/t": {
+                "type": "string"
+              },
+              "Price evidence": {
+                "type": "string"
+              },
+              "Vendor quote USD/t": {
+                "type": "string"
+              },
+              "Source URL": {
+                "type": "string"
+              },
+              "Source status": {
+                "type": "string"
+              },
+              "Technical notes": {
+                "type": "string"
+              },
+              "Reviewed": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
