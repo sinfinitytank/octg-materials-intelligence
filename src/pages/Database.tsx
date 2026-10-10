@@ -263,13 +263,7 @@ export default function Database() {
                       <input
                         type="checkbox"
                         checked={c.getIsVisible()}
-                        onChange={(event) => {
-                          c.getToggleVisibilityHandler()(event);
-                          // Keep the mobile popover from covering sortable table headers.
-                          if (window.matchMedia('(max-width: 760px)').matches) {
-                            setShowColumns(false);
-                          }
-                        }}
+                        onChange={c.getToggleVisibilityHandler()}
                       />
                       {String(c.columnDef.header)}
                     </label>

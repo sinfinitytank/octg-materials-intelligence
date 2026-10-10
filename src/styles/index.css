@@ -4376,6 +4376,12 @@ summary {
   .pagination > div {
     margin-left: auto;
   }
+  .column-picker .popover {
+    top: auto;
+    bottom: calc(100% + var(--space-2));
+    max-height: min(45vh, 360px);
+    overflow-y: auto;
+  }
 }
 
 /* Workspace design system: quiet chrome, explicit hierarchy, technical readability. */
